@@ -1,6 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+<div class="hero-title">
+        I'm Andy Rae. <br><br>
+        I work in film helping connect cinemas and audiences, currently at <a href="https://filmhubmidlands.org" target="_blank">Film Hub Midlands</a>.
+</div>
+
+<div class="social">
+        <a href="./about">About</a> - <a href="/writing/tag:project">Projects</a>
+        <br>
+        <a href="https://twitter.com/AndyRae_" target="_blank">Twitter</a> -
+        <a href="https://www.linkedin.com/in/AndyRae1/" target="_blank">LinkedIn</a> -
+        <a href="https://github.com/AndyRae" target="_blank">GitHub</a> -
+        <a href="mailto:hello@rae.li" target="_blank">Email</a>
+</div>

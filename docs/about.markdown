@@ -1,18 +1,25 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+👋 **Hi I’m Andy Rae,** I work in film helping connect cinemas and audiences.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+🎬 I work at [BFI Film Hub Midlands](https://filmhubmidlands.org), based at [Broadway Nottingham](https://www.broadway.org.uk).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+🔎 I'm currently making [Film Research](https://filmresearch.org), a library of film research, reports, and data sets from the UK film industry.
 
+📈 I also occasionally [write](/writing/tag:writing) about using data to find things out.
 
-[jekyll-organization]: https://github.com/jekyll
+☕️ I like to meet new people. Let me know if you want to grab a coffee.
+
+## Contact
+
+✉️ [hello@rae.li](mailto:hello@rae.li)
+
+🐦 [@AndyRae_](https://twitter.com/andyrae_)
+
+🌐 [LinkedIn](https://www.linkedin.com/in/AndyRae1/)
+
+💻 [GitHub](https://github.com/AndyRae)
