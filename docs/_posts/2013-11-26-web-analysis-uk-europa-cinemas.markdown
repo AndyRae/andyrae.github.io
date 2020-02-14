@@ -1,10 +1,11 @@
 ---
 title: Website Analysis of UK Cinemas
 date: 26-11-2013
-image: grey.jpg
 taxonomy:
     tag: writing
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/assets/charts/website.js"></script>
 
 A closer look at how fast the websites of UK independent cinemas are.
 

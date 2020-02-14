@@ -8,4 +8,6 @@ taxonomy:
 
 ![image](/assets/images/the-venue-1.jpg)
 
+---
+
 ![image](/assets/images/the-venue-2.jpg)

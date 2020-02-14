@@ -68,7 +68,7 @@ a:hover {
 	margin: 14px;
 	border-bottom: none;
 	background: #1565c0;
-	background-position: bottom;
+	background-position: center;
 	color: #fff;
 	text-align: left;
 }
@@ -103,6 +103,22 @@ span {
 .chart {
 	width: 100%;
 	margin-bottom: 1%;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 1rem;
+    text-align: center;
+    color: #aaa;
+}
+.pagination li {
+    display: inline-block;
+    border: 1px solid #eee;
+}
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 4px 15px;
 }
 
 /*content*/

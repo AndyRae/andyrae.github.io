@@ -8,4 +8,6 @@ taxonomy:
 
 ![image](/assets/images/regal-1.jpg)
 
+---
+
 ![image](/assets/images/regal-2.jpg)

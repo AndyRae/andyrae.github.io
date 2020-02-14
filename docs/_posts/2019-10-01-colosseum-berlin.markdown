@@ -9,4 +9,6 @@ taxonomy:
 
 ![image](/assets/images/colosseum-1.jpg)
 
+---
+
 ![image](/assets/images/colosseum-2.jpg)

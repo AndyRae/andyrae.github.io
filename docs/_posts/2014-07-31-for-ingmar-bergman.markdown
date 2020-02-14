@@ -31,4 +31,6 @@ I’m no expert; I see films the same way as everyone else does: as part of an a
 
 ![letter1](/assets/images/bergman-1.png)
 
+---
+
 ![letter2](/assets/images/bergman-2.png)

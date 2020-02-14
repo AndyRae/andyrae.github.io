@@ -1,10 +1,11 @@
 ---
 title: How do cinemas use email marketing?
 date: November 22, 2018
-image: grey.jpg
 taxonomy:
     tag: writing
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/assets/charts/email-analysis.js"></script>
 
 [Email is still king](https://www.google.co.uk/search?ei=x6jkW5boL-eRgAbd4IGQDQ&q=email+is+still+king&oq=email+is+still+king). Even with the rise of social media and digital advertising, email is still at least [three times](https://optinmonster.com/email-marketing-vs-social-media-performance-2016-2019-statistics/) more effective than anything else to generate a conversion.
 Given this importance, I'm interested in how the film exhibition sector uses it to reach their audiences.

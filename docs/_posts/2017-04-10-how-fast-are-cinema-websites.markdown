@@ -1,10 +1,11 @@
 ---
 title: How fast are cinema websites?
 date: 10-04-2017
-iamge: grey.jpg
 taxonomy:
     tag: writing
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/assets/charts/website.js"></script>
 
 In [2013 I researched how UK cinemas](https://rae.li/web-analysis-uk-europa-cinemas/) were fairing with their website performance.
 

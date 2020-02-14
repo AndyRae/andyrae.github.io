@@ -1,10 +1,12 @@
 ---
 title: Making Sense of a Cinema Comments Board
 date: December 18, 2019
-image: cinema-board-2.jpg
+image: cinema-board-1.jpg
 taxonomy:
     tag: writing
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/assets/charts/cinema-comments-board.js"></script>
 
 Comment boards began appearing in independent cinemas across the UK a few years ago, allowing audiences a little space to let people talk about film in the cinema. 
 

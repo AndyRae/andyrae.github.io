@@ -8,4 +8,6 @@ taxonomy:
 
 ![image](/assets/images/stamford-1.jpg)
 
+---
+
 ![image](/assets/images/stamford-2.jpg)

@@ -2,7 +2,7 @@
 title: Film Feels Website
 date: August 5, 2019
 publish_date: August 5, 2019
-image: film-feels-1.jpg
+image: film-feels-1.png
 taxonomy:
     tag: project
 ---

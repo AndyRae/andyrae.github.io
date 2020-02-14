@@ -1,10 +1,11 @@
 ---
 title: How easy is it to read film descriptions?
 date: 11-07-2017
-image: grey.jpg
 taxonomy:
     tag: writing
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/assets/charts/readability.js"></script>
 
 Inspired by a workshop from Heather Maitland a few months ago, I wanted to examine how easy it is to read the descriptions that cinemas use on the films they show.
 

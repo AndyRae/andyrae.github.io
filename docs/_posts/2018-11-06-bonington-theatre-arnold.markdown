@@ -8,4 +8,6 @@ taxonomy:
 
 ![image](/assets/images/bonington-1.jpg)
 
+---
+
 ![image](/assets/images/bonington-2.jpg)

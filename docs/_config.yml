@@ -22,13 +22,16 @@ title: Andy Rae - Film & Technology
 email: hello@rae.li
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: @AndyRae_
-github_username:  andyrae
+twitter_username: AndyRae_
+# github_username:  andyrae
+
+paginate: 12
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.

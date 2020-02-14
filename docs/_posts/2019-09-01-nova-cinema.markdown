@@ -8,5 +8,11 @@ taxonomy:
 ---
 
 ![image](/assets/images/nova-1.jpg)
+
+---
+
 ![image](/assets/images/nova-2.jpg)
+
+---
+
 ![image](/assets/images/nova-3.jpg)
