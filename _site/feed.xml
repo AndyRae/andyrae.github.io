@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-15T16:13:06+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Andy Rae - Film &amp;amp; Technology</title><entry><title type="html">Making Sense of a Cinema Comments Board</title><link href="http://localhost:4000/2019/12/18/cinema-comments-board.html" rel="alternate" type="text/html" title="Making Sense of a Cinema Comments Board" /><published>2019-12-18T00:00:00+00:00</published><updated>2019-12-18T00:00:00+00:00</updated><id>http://localhost:4000/2019/12/18/cinema-comments-board</id><content type="html" xml:base="http://localhost:4000/2019/12/18/cinema-comments-board.html">&lt;script type=&quot;text/javascript&quot; src=&quot;https://www.gstatic.com/charts/loader.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/charts/cinema-comments-board.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Comment boards began appearing in independent cinemas across the UK a few years ago, allowing audiences a little space to let people talk about film in the cinema.&lt;/p&gt;
+
+&lt;p&gt;The idea is simple: once you’ve seen a film, you can write a short review on a card and let the world see.&lt;/p&gt;
+
+&lt;p&gt;I read this one at Broadway most mornings, and absolutely love it - because it’s not reviews from London or New York, but people watching and experiencing cinema in &lt;em&gt;our&lt;/em&gt; cinema.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comment boards are beautiful in an analogue sense, a fun way to try and get a feeling of what people thought about a film over an opening weekend.&lt;/p&gt;
+
+&lt;p&gt;But I’ve always wanted to explore further - wouldn’t it be great if we could have a computer read all of the cards and tell us if people liked the films or not?&lt;/p&gt;
+
+&lt;p&gt;I thought I’d give that a shot.&lt;/p&gt;
+
+&lt;p&gt;Luckily Broadway have been saving the cards for the last three years, 1,236 of them, which looks like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Or here’s a handful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-3.gif&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I digitised all 1,236 of the cards, then turned the handwriting into text, and then analysed the sentiment of each card¹.&lt;/p&gt;
+
+&lt;p&gt;Analysing sentiment means that we determine a score between -1 (very negative) to 1 (very positive) for pieces of text². This is great because it allows us to turn all of these cards into a data set, and we can compare positive and negative reviews really simply.&lt;/p&gt;
+
+&lt;p&gt;For example, analysing this review of &lt;em&gt;Sorry We Missed You&lt;/em&gt; last month, it received a very positive score of 0.89.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Over the 1,236 cards, we can now visualise how the films compared on average, taking the 100 most frequently reviewed, ordered by how positive the score was.&lt;/p&gt;
+
+&lt;div id=&quot;bar_chart&quot; class=&quot;chart&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;A relief to see almost entirely positive scores, but with some surprising films coming out on top - who would guess the tennis biopic &lt;em&gt;Borg vs McEnroe&lt;/em&gt; would do so well? Otherwise it’s great to see &lt;em&gt;Black Panther&lt;/em&gt; up there, &lt;em&gt;My Life as A Courgette&lt;/em&gt; too. 
+Whilst unfortunately &lt;em&gt;You Were Never Really Here&lt;/em&gt;, &lt;em&gt;A Ghost Story&lt;/em&gt;, and &lt;em&gt;Personal Shopper&lt;/em&gt; not doing so well.&lt;/p&gt;
+
+&lt;p&gt;However, people only write a card if they loved or hated the film - and it happens that the few people who came to see &lt;em&gt;Borg vs McEnroe&lt;/em&gt; &lt;strong&gt;and&lt;/strong&gt; wrote a card all loved it. So please don’t come away from this thinking that &lt;em&gt;Borg vs McEnroe&lt;/em&gt; was the most loved film at Broadway, and that everyone hated &lt;em&gt;You Were Never Really Here&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;But it is interesting when we look at the range of reviews each film - we can visualise this below, as the right of each bar is the most positive card per film, whilst the left is the least - that mark in the middle is the average as shown above.&lt;/p&gt;
+
+&lt;div id=&quot;candle&quot; class=&quot;chart&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;We quickly see that almost every film had a very positive review, with only the bottom few missing out. But there doesn’t seem to be much consensus between reviews at all, with very large ranges on most films. Whilst some films seem to be completely polarising, such as Lady Bird, The Shape of Water, The Favourite…&lt;/p&gt;
+
+&lt;p&gt;But given there are mostly only a few cards per film, we don’t want to dwell too much - we have only a very small sample size per film, for if over 3,000 people saw Sorry We Missed You, only 1% left a card. So whilst these graphs are fun, it’s a stretch to call even a few of those bars indicative of a wider audience, or draw many conclusions.&lt;/p&gt;
+
+&lt;p&gt;Despite that, maybe the dataset is interesting if we see it as an approach of how people are talking about film when they leave the cinema, after all these are effectively immediate exit polls - no time for reflection, just hot takes. Here are some of those most used words on cards.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Which again shows the simplicity of these cards. The audience communicate their feelings directly and without nuance. Generally the cards use a single short sentence with blunt and emotive language, rarely using complex ideas. The average card was only twelve words long with no room for detail, and the immediate language of cinema is succinct - “&lt;em&gt;very good&lt;/em&gt;”, “&lt;em&gt;love&lt;/em&gt;”, “&lt;em&gt;brilliant&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;p&gt;So whilst it’s fun to try to visualise these audience dialogues. Unfortunately the cards aren’t rich enough to explore ideas such as the MTI Movie Classification³, invented by KAIST Business School in South Korea.&lt;/p&gt;
+
+&lt;p&gt;Here they use audience reviews of films to create new film genres (outlined below), with a new data-driven approach rather than the traditional top-down way. The methodology in that case involved more in-depth reviews than quick comment cards.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cinema-board-6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ultimately, it’s probably most useful, and more fun, just to read the noticeboard ad-hoc on a Monday morning.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[1] &lt;em&gt;This sentence is intentionally vague, but really the technical “how” this works is probably the least interesting bit, so it feels fine to gloss over. Handwriting to text is not always perfect, but a look through a sample says it’s 95% accurate per word, so I’m confident the data set reflects our cards.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;[2] &lt;em&gt;Sentiment analysis is not always perfect, but as before, luckily the audience communicate their feelings directly and without nuance. Generally the cards use a single short sentence with blunt and emotive language, rarely using complex ideas or sarcasm, which is perfect for sentiment analysis. I sense checked through a sample, and found it very accurate.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;[3] &lt;em&gt;Shon, Ji-Hyun and Kim, Young-Gul and Yim, Sang-Jin, Dissecting Movie Genres from an Audience Perspective: MTI Movie Classification Method (October 1, 2012). KAIST Business School Working Paper No. 2012-008. Available at SSRN: &lt;a href=&quot;https://ssrn.com/abstract=2158496&quot;&gt;https://ssrn.com/abstract=2158496&lt;/a&gt; or &lt;a href=&quot;http://dx.doi.org/10.2139/ssrn.2158496&quot;&gt;http://dx.doi.org/10.2139/ssrn.2158496&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="writing" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cinema-board-1.jpg" /><media:content medium="image" url="http://localhost:4000/cinema-board-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cinerama, Rotterdam</title><link href="http://localhost:4000/2019/12/01/cinerama-rotterdam.html" rel="alternate" type="text/html" title="Cinerama, Rotterdam" /><published>2019-12-01T00:00:00+00:00</published><updated>2019-12-01T00:00:00+00:00</updated><id>http://localhost:4000/2019/12/01/cinerama-rotterdam</id><content type="html" xml:base="http://localhost:4000/2019/12/01/cinerama-rotterdam.html">&lt;p&gt;&lt;img src=&quot;/assets/images/cinerama.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cinerama.jpg" /><media:content medium="image" url="http://localhost:4000/cinerama.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cinematek, Brussels</title><link href="http://localhost:4000/2019/11/01/cinematek-brussels.html" rel="alternate" type="text/html" title="Cinematek, Brussels" /><published>2019-11-01T00:00:00+00:00</published><updated>2019-11-01T00:00:00+00:00</updated><id>http://localhost:4000/2019/11/01/cinematek-brussels</id><content type="html" xml:base="http://localhost:4000/2019/11/01/cinematek-brussels.html">&lt;p&gt;&lt;img src=&quot;/assets/images/cinematek.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cinematek.jpg" /><media:content medium="image" url="http://localhost:4000/cinematek.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Colosseum, Berlin</title><link href="http://localhost:4000/2019/10/01/colosseum-berlin.html" rel="alternate" type="text/html" title="Colosseum, Berlin" /><published>2019-10-01T00:00:00+01:00</published><updated>2019-10-01T00:00:00+01:00</updated><id>http://localhost:4000/2019/10/01/colosseum-berlin</id><content type="html" xml:base="http://localhost:4000/2019/10/01/colosseum-berlin.html">&lt;p&gt;&lt;img src=&quot;/assets/images/colosseum-1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/colosseum-2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/colosseum-1.jpg" /><media:content medium="image" url="http://localhost:4000/colosseum-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Nova Cinema, Brussels</title><link href="http://localhost:4000/2019/09/01/nova-cinema.html" rel="alternate" type="text/html" title="Nova Cinema, Brussels" /><published>2019-09-01T00:00:00+01:00</published><updated>2019-09-01T00:00:00+01:00</updated><id>http://localhost:4000/2019/09/01/nova-cinema</id><content type="html" xml:base="http://localhost:4000/2019/09/01/nova-cinema.html">&lt;p&gt;&lt;img src=&quot;/assets/images/nova-1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/nova-2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/nova-3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/nova-1.jpg" /><media:content medium="image" url="http://localhost:4000/nova-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Film Feels Website</title><link href="http://localhost:4000/2019/08/05/film-feels-website.html" rel="alternate" type="text/html" title="Film Feels Website" /><published>2019-08-05T00:00:00+01:00</published><updated>2019-08-05T00:00:00+01:00</updated><id>http://localhost:4000/2019/08/05/film-feels-website</id><content type="html" xml:base="http://localhost:4000/2019/08/05/film-feels-website.html">&lt;p&gt;Film Feels is a UK-wide annual film season, working with independent cinemas, festivals and venues in England, Scotland, Wales and Northern Ireland to offer audiences access to unique film events and programmes. Supported by the British Film Institute’s Film Audience Network.&lt;/p&gt;
+
+&lt;p&gt;With over 250 screenings nationwide, &lt;a href=&quot;https://filmhubmidlands.org&quot;&gt;Film Hub Midlands&lt;/a&gt; needed a website that can not only provide searchable listings, but also grasp the feel of the season, extending the stunning brand from &lt;a href=&quot;https://sailcreative.co.uk&quot;&gt;Sail Creative&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The website is built with Django in Python, and uses &lt;strong&gt;Ostende&lt;/strong&gt;, a listing service that I’ll be releasing as open source in the next few weeks.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Andy created an elegant site for our public programme in a short space of time, and exceeded our original spec and expectations. It’s beautifully fit for purpose on the outside and underpinned by impeccable logic to help us grow and target audiences as the project progresses.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Annabel Grundy, Film Hub Midlands&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://filmfeels.co.uk&quot;&gt;filmfeels.co.uk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-4.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-6.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-7.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/film-feels-8.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It features a dark mode theme, available through the new media feature &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;prefers-color-scheme&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="projects" /><summary type="html">Film Feels is a UK-wide annual film season, working with independent cinemas, festivals and venues in England, Scotland, Wales and Northern Ireland to offer audiences access to unique film events and programmes. Supported by the British Film Institute’s Film Audience Network.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/film-feels-1.png" /><media:content medium="image" url="http://localhost:4000/film-feels-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">De Balie, Amsterdam</title><link href="http://localhost:4000/2019/08/01/de-balie.html" rel="alternate" type="text/html" title="De Balie, Amsterdam" /><published>2019-08-01T00:00:00+01:00</published><updated>2019-08-01T00:00:00+01:00</updated><id>http://localhost:4000/2019/08/01/de-balie</id><content type="html" xml:base="http://localhost:4000/2019/08/01/de-balie.html">&lt;p&gt;&lt;img src=&quot;/assets/images/de-balie.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/de-balie.jpg" /><media:content medium="image" url="http://localhost:4000/de-balie.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cinéma Vendôme, Brussels</title><link href="http://localhost:4000/2019/07/01/cinema-vendome.html" rel="alternate" type="text/html" title="Cinéma Vendôme, Brussels" /><published>2019-07-01T00:00:00+01:00</published><updated>2019-07-01T00:00:00+01:00</updated><id>http://localhost:4000/2019/07/01/cinema-vendome</id><content type="html" xml:base="http://localhost:4000/2019/07/01/cinema-vendome.html">&lt;p&gt;&lt;img src=&quot;/assets/images/vendome.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/vendome.jpg" /><media:content medium="image" url="http://localhost:4000/vendome.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Filmtheater De Uitkijk, Amsterdam</title><link href="http://localhost:4000/2019/06/09/filmtheater-de-uitkijk-amsterdam.html" rel="alternate" type="text/html" title="Filmtheater De Uitkijk, Amsterdam" /><published>2019-06-09T00:00:00+01:00</published><updated>2019-06-09T00:00:00+01:00</updated><id>http://localhost:4000/2019/06/09/filmtheater-de-uitkijk-amsterdam</id><content type="html" xml:base="http://localhost:4000/2019/06/09/filmtheater-de-uitkijk-amsterdam.html">&lt;p&gt;&lt;img src=&quot;/assets/images/de-uitkijk.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/de-uitkijk.jpg" /><media:content medium="image" url="http://localhost:4000/de-uitkijk.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lumière Cinema, Maastricht</title><link href="http://localhost:4000/2019/05/31/lumiere-cinema-maastricht.html" rel="alternate" type="text/html" title="Lumière Cinema, Maastricht" /><published>2019-05-31T00:00:00+01:00</published><updated>2019-05-31T00:00:00+01:00</updated><id>http://localhost:4000/2019/05/31/lumiere-cinema-maastricht</id><content type="html" xml:base="http://localhost:4000/2019/05/31/lumiere-cinema-maastricht.html">&lt;p&gt;&lt;img src=&quot;/assets/images/lumiere-1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lumiere-2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lumiere-3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lumiere-4.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lumiere-5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="photos" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/lumiere-1.jpg" /><media:content medium="image" url="http://localhost:4000/lumiere-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

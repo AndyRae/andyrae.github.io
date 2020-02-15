@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" type="image/png" href="/assets/icons/apple-icon.png">
+  <link rel="apple-touch-icon-180x180" sizes="180x180" type="image/png" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-hires.png"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Website Analysis of UK Cinemas | Andy Rae - Film &amp; Technology</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Website Analysis of UK Cinemas" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2013/11/26/web-analysis-uk-europa-cinemas.html" />
+<meta property="og:url" content="http://localhost:4000/2013/11/26/web-analysis-uk-europa-cinemas.html" />
+<meta property="og:site_name" content="Andy Rae - Film &amp; Technology" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-11-26T00:00:00+00:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/11/26/web-analysis-uk-europa-cinemas.html"},"url":"http://localhost:4000/2013/11/26/web-analysis-uk-europa-cinemas.html","headline":"Website Analysis of UK Cinemas","dateModified":"2013-11-26T00:00:00+00:00","datePublished":"2013-11-26T00:00:00+00:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@AndyRae_">
+  <meta name="twitter:image" content="/assets/icons/1.jpg">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andy Rae - Film & Technology" /><script async src="https://www.googletagmanager.com/gtag/js?id=UA-43038940-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-43038940-1');
+  </script>
+
+  
+    
+
+
+
+
+
+  
+</head>
+<body><div id="wrapper-navbar" class="wrapper-fluid wrapper-navbar">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+            <ul id="main-menu" class="navbar-nav">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/" class="nav-link">Home</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/about" class="nav-link">About</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/tags/projects/" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+</div>
+<main class="post" aria-label="Content">
+      <div class="wrapper">
+        <article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <h1 class="page-title" itemprop="name headline">Website Analysis of UK Cinemas</h1><time class="date" datetime="2013-11-26T00:00:00+00:00" itemprop="datePublished">
+    <span>November 26, 2013</span>
+  </time>
+
+  <div class="post-content entry-content" itemprop="articleBody">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript" src="/assets/charts/website.js"></script>
+
+<p>A closer look at how fast the websites of UK independent cinemas are.</p>
+
+<p>Why we should care about this:</p>
+
+<p>Your users’ experience in terms of navigating your site should be a great reason. Users have many options when it comes to consuming content on the internet, and a slow performing website will frustrate your users, sending them elsewhere. A faster and more responsive website will keep them more engaged and focused on your content, rather than waiting for scripts and images to load.</p>
+
+<p>Another reason is for SEO. Google has announced they are using page speed in their ranking algorithm.</p>
+
+<p><em>This means that faster performing sites may rank higher in search engine results. As developers and marketers look to optimize their sites, page speed should be among the top optimizations to consider.</em></p>
+
+<p>Source: <a href="http://gtmetrix.com/faq.html#faq-why">GTMetrix</a></p>
+
+<p>No database of these venues seems to really exist, so I quickly scraped the <a href="http://europa-cinemas.org/">Europa Cinemas</a> website for their list. This is imperfect as there are of course many UK cinemas who aren’t part of this network, but I thought the sample set was significant enough – a total of 57 UK venues are part of the Europa network.</p>
+
+<p>I put this list through Google Speed Analytics and Yahoo’s YSlow using the <a href="http://gtmetrix.com/">GTMetrix API</a>, gathering the load time and respective gradings. Also checking whether the site itself was implementing responsive design.</p>
+
+<p>In any case, the data collected is below.</p>
+
+<iframe width="100%" height="500" frameborder="0" src="https://docs.google.com/spreadsheet/pub?key=0Ajdrz7Ywy_apdGRyRUNodWpqN0QxdmlHY0RDcEtvTmc&#038;output=html&#038;widget=true"></iframe>
+
+<p>So a fairly interesting collection, and quite poor across the board, with an average loading time of just over five seconds. And mostly C/D grades from Google and Yahoo.</p>
+
+<p>The fastest was the <a href="http://www.riocinema.org.uk/">Rio Cinema</a> in London.
+Only seven venues achieved times below the expected three second mark, and almost every venue had a host of possible optimisations to make. Often simple points like Gzip compression came up again and again.</p>
+
+<p>Most impressive was probably <a href="http://www.thegulbenkian.co.uk/">The Gulbenkian</a> in Kent, with a 2.67 load time, only a C grade from both tools, but the only venue in the top 10 implementing a responsive design.</p>
+
+  </div>
+
+  <a class="u-url" href="/2013/11/26/web-analysis-uk-europa-cinemas.html" hidden></a>
+</article>
+
+      </div>
+      <hr>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+
+</html>

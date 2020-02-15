@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="post">
+	<h1>{{ page.tag }}</h1>
+
+	{%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+
+	{%- for post in site.tags[page.tag] -%}
+		<a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url({{ site.baseurl }}/assets/thumbs/{{ post.image }});">
+		<div class="card-title">
+			{{ post.title | escape }}
+		</div>
+		<div class="card-caption">
+			<time class="dt-published" datetime="{{ post.date | date: date_format }}">
+				{{ post.date | date: date_format }}
+			</time>
+		</div>
+		<br>
+		</a>
+	{%- endfor -%}
+
+</div>

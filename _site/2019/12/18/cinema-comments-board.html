@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" type="image/png" href="/assets/icons/apple-icon.png">
+  <link rel="apple-touch-icon-180x180" sizes="180x180" type="image/png" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-hires.png"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Making Sense of a Cinema Comments Board | Andy Rae - Film &amp; Technology</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Making Sense of a Cinema Comments Board" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2019/12/18/cinema-comments-board.html" />
+<meta property="og:url" content="http://localhost:4000/2019/12/18/cinema-comments-board.html" />
+<meta property="og:site_name" content="Andy Rae - Film &amp; Technology" />
+<meta property="og:image" content="http://localhost:4000/cinema-board-1.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-18T00:00:00+00:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/12/18/cinema-comments-board.html"},"url":"http://localhost:4000/2019/12/18/cinema-comments-board.html","image":"http://localhost:4000/cinema-board-1.jpg","headline":"Making Sense of a Cinema Comments Board","dateModified":"2019-12-18T00:00:00+00:00","datePublished":"2019-12-18T00:00:00+00:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@AndyRae_">
+  <meta name="twitter:image" content="/assets/icons/1.jpg">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andy Rae - Film & Technology" /><script async src="https://www.googletagmanager.com/gtag/js?id=UA-43038940-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-43038940-1');
+  </script>
+
+  
+    
+
+
+
+
+
+  
+</head>
+<body><div id="wrapper-navbar" class="wrapper-fluid wrapper-navbar">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+            <ul id="main-menu" class="navbar-nav">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/" class="nav-link">Home</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/about" class="nav-link">About</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="/tags/projects/" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+</div>
+<main class="post" aria-label="Content">
+      <div class="wrapper">
+        <article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <h1 class="page-title" itemprop="name headline">Making Sense of a Cinema Comments Board</h1><time class="date" datetime="2019-12-18T00:00:00+00:00" itemprop="datePublished">
+    <span>December 18, 2019</span>
+  </time>
+
+  <div class="post-content entry-content" itemprop="articleBody">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript" src="/assets/charts/cinema-comments-board.js"></script>
+
+<p>Comment boards began appearing in independent cinemas across the UK a few years ago, allowing audiences a little space to let people talk about film in the cinema.</p>
+
+<p>The idea is simple: once you’ve seen a film, you can write a short review on a card and let the world see.</p>
+
+<p>I read this one at Broadway most mornings, and absolutely love it - because it’s not reviews from London or New York, but people watching and experiencing cinema in <em>our</em> cinema.</p>
+
+<p><img src="/assets/images/cinema-board-2.jpg" alt="image" /></p>
+
+<p>Comment boards are beautiful in an analogue sense, a fun way to try and get a feeling of what people thought about a film over an opening weekend.</p>
+
+<p>But I’ve always wanted to explore further - wouldn’t it be great if we could have a computer read all of the cards and tell us if people liked the films or not?</p>
+
+<p>I thought I’d give that a shot.</p>
+
+<p>Luckily Broadway have been saving the cards for the last three years, 1,236 of them, which looks like this.</p>
+
+<p><img src="/assets/images/cinema-board-1.jpg" alt="image" /></p>
+
+<p>Or here’s a handful.</p>
+
+<p><img src="/assets/images/cinema-board-3.gif" alt="image" /></p>
+
+<p>I digitised all 1,236 of the cards, then turned the handwriting into text, and then analysed the sentiment of each card¹.</p>
+
+<p>Analysing sentiment means that we determine a score between -1 (very negative) to 1 (very positive) for pieces of text². This is great because it allows us to turn all of these cards into a data set, and we can compare positive and negative reviews really simply.</p>
+
+<p>For example, analysing this review of <em>Sorry We Missed You</em> last month, it received a very positive score of 0.89.</p>
+
+<p><img src="/assets/images/cinema-board-4.png" alt="image" /></p>
+
+<p>Over the 1,236 cards, we can now visualise how the films compared on average, taking the 100 most frequently reviewed, ordered by how positive the score was.</p>
+
+<div id="bar_chart" class="chart"></div>
+
+<p>A relief to see almost entirely positive scores, but with some surprising films coming out on top - who would guess the tennis biopic <em>Borg vs McEnroe</em> would do so well? Otherwise it’s great to see <em>Black Panther</em> up there, <em>My Life as A Courgette</em> too. 
+Whilst unfortunately <em>You Were Never Really Here</em>, <em>A Ghost Story</em>, and <em>Personal Shopper</em> not doing so well.</p>
+
+<p>However, people only write a card if they loved or hated the film - and it happens that the few people who came to see <em>Borg vs McEnroe</em> <strong>and</strong> wrote a card all loved it. So please don’t come away from this thinking that <em>Borg vs McEnroe</em> was the most loved film at Broadway, and that everyone hated <em>You Were Never Really Here</em>.</p>
+
+<p>But it is interesting when we look at the range of reviews each film - we can visualise this below, as the right of each bar is the most positive card per film, whilst the left is the least - that mark in the middle is the average as shown above.</p>
+
+<div id="candle" class="chart"></div>
+
+<p>We quickly see that almost every film had a very positive review, with only the bottom few missing out. But there doesn’t seem to be much consensus between reviews at all, with very large ranges on most films. Whilst some films seem to be completely polarising, such as Lady Bird, The Shape of Water, The Favourite…</p>
+
+<p>But given there are mostly only a few cards per film, we don’t want to dwell too much - we have only a very small sample size per film, for if over 3,000 people saw Sorry We Missed You, only 1% left a card. So whilst these graphs are fun, it’s a stretch to call even a few of those bars indicative of a wider audience, or draw many conclusions.</p>
+
+<p>Despite that, maybe the dataset is interesting if we see it as an approach of how people are talking about film when they leave the cinema, after all these are effectively immediate exit polls - no time for reflection, just hot takes. Here are some of those most used words on cards.</p>
+
+<p><img src="/assets/images/cinema-board-5.png" alt="image" /></p>
+
+<p>Which again shows the simplicity of these cards. The audience communicate their feelings directly and without nuance. Generally the cards use a single short sentence with blunt and emotive language, rarely using complex ideas. The average card was only twelve words long with no room for detail, and the immediate language of cinema is succinct - “<em>very good</em>”, “<em>love</em>”, “<em>brilliant</em>”.</p>
+
+<p>So whilst it’s fun to try to visualise these audience dialogues. Unfortunately the cards aren’t rich enough to explore ideas such as the MTI Movie Classification³, invented by KAIST Business School in South Korea.</p>
+
+<p>Here they use audience reviews of films to create new film genres (outlined below), with a new data-driven approach rather than the traditional top-down way. The methodology in that case involved more in-depth reviews than quick comment cards.</p>
+
+<p><img src="/assets/images/cinema-board-6.png" alt="image" /></p>
+
+<p>Ultimately, it’s probably most useful, and more fun, just to read the noticeboard ad-hoc on a Monday morning.</p>
+
+<hr />
+
+<p>[1] <em>This sentence is intentionally vague, but really the technical “how” this works is probably the least interesting bit, so it feels fine to gloss over. Handwriting to text is not always perfect, but a look through a sample says it’s 95% accurate per word, so I’m confident the data set reflects our cards.</em></p>
+
+<p>[2] <em>Sentiment analysis is not always perfect, but as before, luckily the audience communicate their feelings directly and without nuance. Generally the cards use a single short sentence with blunt and emotive language, rarely using complex ideas or sarcasm, which is perfect for sentiment analysis. I sense checked through a sample, and found it very accurate.</em></p>
+
+<p>[3] <em>Shon, Ji-Hyun and Kim, Young-Gul and Yim, Sang-Jin, Dissecting Movie Genres from an Audience Perspective: MTI Movie Classification Method (October 1, 2012). KAIST Business School Working Paper No. 2012-008. Available at SSRN: <a href="https://ssrn.com/abstract=2158496">https://ssrn.com/abstract=2158496</a> or <a href="http://dx.doi.org/10.2139/ssrn.2158496">http://dx.doi.org/10.2139/ssrn.2158496</a></em></p>
+
+  </div>
+
+  <a class="u-url" href="/2019/12/18/cinema-comments-board.html" hidden></a>
+</article>
+
+      </div>
+      <hr>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+
+</html>
