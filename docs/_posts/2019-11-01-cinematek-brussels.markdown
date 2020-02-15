@@ -3,8 +3,7 @@ title: Cinematek, Brussels
 date: November 1, 2019
 publish_date: November 1, 2019
 image: cinematek.jpg
-taxonomy:
-    tag: photos
+tag: photos
 ---
 
 ![image](/assets/images/cinematek.jpg)

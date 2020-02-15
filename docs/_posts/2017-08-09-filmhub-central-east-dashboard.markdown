@@ -2,8 +2,7 @@
 title: Film Hub Central East Dashboard
 date: 09-08-2017
 image: fhce.png
-taxonomy:
-    tag: project
+tag: projects
 ---
 
 ![website](/assets/images/fhce.png)

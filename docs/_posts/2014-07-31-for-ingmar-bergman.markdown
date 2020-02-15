@@ -2,8 +2,7 @@
 title: For (not about) Ingmar Bergman
 date: 31-07-2014
 image: bergman-1.png
-taxonomy:
-    tag: writing
+tag: writing
 ---
 
 This is one of my favourite letters on film, written by Wim Wenders to Ingmar Bergman on his 70th birthday.

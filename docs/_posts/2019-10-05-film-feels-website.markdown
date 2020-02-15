@@ -3,8 +3,7 @@ title: Film Feels Website
 date: August 5, 2019
 publish_date: August 5, 2019
 image: film-feels-1.png
-taxonomy:
-    tag: project
+tag: projects
 ---
 
 Film Feels is a UK-wide annual film season, working with independent cinemas, festivals and venues in England, Scotland, Wales and Northern Ireland to offer audiences access to unique film events and programmes. Supported by the British Film Institute's Film Audience Network.

@@ -1,8 +1,7 @@
 ---
 title: How do cinemas use email marketing?
 date: November 22, 2018
-taxonomy:
-    tag: writing
+tag: writing
 ---
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="/assets/charts/email-analysis.js"></script>

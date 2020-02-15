@@ -2,8 +2,7 @@
 title: KINO Rotterdam
 date: March 31, 2019
 image: kino-rotterdam.jpg
-taxonomy:
-    tag: photos
+tag: photos
 ---
 
 ![image](/assets/images/kino-rotterdam.jpg)

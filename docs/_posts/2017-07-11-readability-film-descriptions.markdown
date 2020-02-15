@@ -1,8 +1,7 @@
 ---
 title: How easy is it to read film descriptions?
 date: 11-07-2017
-taxonomy:
-    tag: writing
+tag: writing
 ---
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="/assets/charts/readability.js"></script>

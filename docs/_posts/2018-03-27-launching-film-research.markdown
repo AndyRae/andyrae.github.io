@@ -2,8 +2,7 @@
 title: Launching FilmResearch.org Beta
 date: March 27, 2018
 image: fr-2.png
-taxonomy:
-    tag: project
+tag: projects
 ---
 
 The UK film industry produces an incredible amount of resources every year. But also sees an incredible amount lost and forgotten, we’re trying to fix that.

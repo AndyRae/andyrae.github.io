@@ -2,8 +2,7 @@
 title: Developing FilmResearch.org
 date: May 9, 2018
 image: fr-1.png
-taxonomy:
-    tag: project
+tag: projects
 ---
 
 Back in February I [launched](https://rae.li/writing/launching-filmresearch-org) a beta of [FilmResearch.org](https://filmresearch.org), a library of film research, reports, and data sets from the UK film industry.

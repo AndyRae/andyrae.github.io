@@ -2,8 +2,7 @@
 title: The Regal Cinema, Melton Mowbray
 date: October 30, 2018
 image: regal-1.jpg
-taxonomy:
-    tag: photos
+tag: photos
 ---
 
 ![image](/assets/images/regal-1.jpg)

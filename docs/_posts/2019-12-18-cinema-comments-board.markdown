@@ -2,8 +2,7 @@
 title: Making Sense of a Cinema Comments Board
 date: December 18, 2019
 image: cinema-board-1.jpg
-taxonomy:
-    tag: writing
+tag: writing
 ---
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="/assets/charts/cinema-comments-board.js"></script>
