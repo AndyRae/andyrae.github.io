@@ -19,7 +19,7 @@ layout: default
   {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
 
   {%- for post in posts -%}
-  <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url({{ site.baseurl }}/assets/thumbs/{{ post.image }});">
+  <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url({{ site.baseurl }}/assets/thumbs/{{ post.image }});">
     <div class="card-title">
       {{ post.title | escape }}
     </div>

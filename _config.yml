@@ -26,6 +26,7 @@ twitter_username: AndyRae_
 # github_username:  andyrae
 
 paginate: 12
+permalink: /:title.html
 
 # Build settings
 # theme: minima

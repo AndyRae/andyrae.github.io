@@ -1,7 +1,7 @@
 ---
 title: Launching FilmResearch.org Beta
 date: March 27, 2018
-image: fr-2.png
+image: fr-1.png
 tag: projects
 ---
 
@@ -11,7 +11,7 @@ The UK film industry produces an incredible amount of resources every year. But 
 
 We’ve indexed hundreds of resources to support innovation in the UK film industry.
 
-![website](/assets/images/fr-2.png)
+![website](/assets/images/fr-1.png)
 
 Our aim is to:
 
