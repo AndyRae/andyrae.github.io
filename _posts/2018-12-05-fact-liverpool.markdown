@@ -1,7 +1,7 @@
 ---
 title: FACT, Liverpool
 date: December 05, 2018
-image: fact.jpg
+image: /assets/images/fact.jpg
 tag: photos
 ---
 

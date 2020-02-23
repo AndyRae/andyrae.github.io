@@ -69,6 +69,7 @@ a:hover {
 	border-bottom: none;
 	background: #1565c0;
 	background-position: center;
+	background-size: cover;
 	color: #fff;
 	text-align: left;
 }

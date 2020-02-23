@@ -1,7 +1,7 @@
 ---
 title: Britain on Film Coast and Sea Website
 date: 29-05-2017
-image: britain-on-film-1.png
+image: /assets/images/britain-on-film-1.png
 tag: projects
 ---
 

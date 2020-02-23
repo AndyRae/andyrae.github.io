@@ -2,7 +2,7 @@
 title: De Balie, Amsterdam
 date: August 1, 2019
 publish_date: August 1, 2019
-image: de-balie.jpg
+image: /assets/images/de-balie.jpg
 tag: photos
 ---
 

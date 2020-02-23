@@ -1,7 +1,7 @@
 ---
 title: Northampton Filmhouse
 date: May 24, 2018
-image: northampton-filmhouse.jpg
+image: /assets/images/northampton-filmhouse.jpg
 tag: photos
 ---
 

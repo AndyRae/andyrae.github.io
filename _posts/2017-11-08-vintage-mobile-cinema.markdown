@@ -1,7 +1,7 @@
 ---
 title: Vintage Mobile Cinema
 date: November 08, 2017
-image: vintage-mobile-cinema.jpg
+image: /assets/images/vintage-mobile-cinema.jpg
 tag: photos
 ---
 

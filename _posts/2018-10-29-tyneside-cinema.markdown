@@ -1,7 +1,7 @@
 ---
 title: Tyneside Cinema, Newcastle
 date: October 29, 2018
-image: tyneside-1.jpg
+image: /assets/images/tyneside-1.jpg
 tag: photos
 ---
 

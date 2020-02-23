@@ -1,7 +1,7 @@
 ---
 title: The Electric Cinema, Birmingham
 date: February 15, 2018
-image: electric.jpg
+image: /assets/images/electric.jpg
 tag: photos
 ---
 

@@ -2,7 +2,7 @@
 title: Film Feels Website
 date: August 5, 2019
 publish_date: August 5, 2019
-image: film-feels-1.png
+image: /assets/images/film-feels-1.jpg
 tag: projects
 ---
 

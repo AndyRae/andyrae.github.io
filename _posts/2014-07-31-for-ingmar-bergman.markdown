@@ -1,7 +1,7 @@
 ---
 title: For (not about) Ingmar Bergman
 date: 31-07-2014
-image: bergman-1.png
+image: /assets/images/bergman-1.png
 tag: writing
 ---
 

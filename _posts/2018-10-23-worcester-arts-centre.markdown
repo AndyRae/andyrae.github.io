@@ -1,7 +1,7 @@
 ---
 title: Worcester Arts Centre
 date: October 23, 2018
-image: worcester.jpg
+image: /assets/images/worcester.jpg
 tag: photos
 ---
 

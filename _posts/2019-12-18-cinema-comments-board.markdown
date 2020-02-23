@@ -1,7 +1,7 @@
 ---
 title: Making Sense of a Cinema Comments Board
 date: December 18, 2019
-image: cinema-board-1.jpg
+image: /assets/images/cinema-board-1.jpg
 tag: writing
 permalink: /writing/cinema-comments-board
 ---

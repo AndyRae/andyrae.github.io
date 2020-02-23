@@ -1,7 +1,7 @@
 ---
 title: Film Hub Central East Dashboard
 date: 09-08-2017
-image: fhce.png
+image: /assets/images/fhce.png
 tag: projects
 ---
 

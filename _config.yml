@@ -28,11 +28,17 @@ twitter_username: AndyRae_
 paginate: 12
 permalink: /:title.html
 
+description: Film, code, and data.
+twitter:
+  username: AndyRae_
+  card: summary
+
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

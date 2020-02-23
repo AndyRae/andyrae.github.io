@@ -1,7 +1,7 @@
 ---
 title: Lumière Cinema, Maastricht
 date: May 31, 2019
-image: lumiere-1.jpg
+image: /assets/images/lumiere-1.jpg
 tag: photos
 ---
 

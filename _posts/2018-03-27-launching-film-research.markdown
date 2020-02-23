@@ -1,7 +1,7 @@
 ---
 title: Launching FilmResearch.org Beta
 date: March 27, 2018
-image: fr-1.png
+image: /assets/images/fr-1.png
 tag: projects
 ---
 

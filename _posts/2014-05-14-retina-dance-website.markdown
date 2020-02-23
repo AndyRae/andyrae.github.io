@@ -1,7 +1,7 @@
 ---
 title: Retina Dance UK Website
 date: 14-05-2014
-image: retina.png
+image: /assets/images/retina.png
 tag: projects
 ---
 

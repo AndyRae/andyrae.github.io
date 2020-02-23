@@ -1,7 +1,7 @@
 ---
 title: Developing FilmResearch.org
 date: May 9, 2018
-image: fr-2.png
+image: /assets/images/fr-2.png
 tag: projects
 ---
 
