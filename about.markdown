@@ -5,11 +5,11 @@ permalink: /about/
 image: /assets/images/1.jpg
 ---
 
-👋 **Hi I’m Andy Rae,** I work in film helping connect cinemas and audiences.
+👋 **Hi I’m Andy Rae,** - I build things with code, and work in film helping connect cinemas and audiences.
 
 🎬 I work at [BFI Film Hub Midlands](https://filmhubmidlands.org), based at [Broadway Nottingham](https://www.broadway.org.uk).
 
-🔎 I'm currently making [Film Research](https://filmresearch.org), a library of film research, reports, and data sets from the UK film industry.
+💥 I'm currently making [a bunch of things](/tags/projects).
 
 📈 I also occasionally [write](/tags/writing) about using data to find things out.
 

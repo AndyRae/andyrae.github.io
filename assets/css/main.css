@@ -38,10 +38,11 @@ a:hover {
 .page {
 	margin: 0% auto;
 	max-width: 680px;
+	padding: 0 24px;
 }
 /*home-container*/
 .hero {
-	padding: 15px;
+	padding: 0 15px;
 }
 .line {
   border: 0;

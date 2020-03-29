@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andy Rae - Film & Technology
+title: Andy Rae
 email: hello@rae.li
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rae.li" # the base hostname & protocol for your site, e.g. http://example.com
@@ -28,7 +28,7 @@ twitter_username: AndyRae_
 paginate: 12
 permalink: /:title.html
 
-description: Film, code, and data.
+description: Code, data, and cinemas.
 twitter:
   username: AndyRae_
   card: summary

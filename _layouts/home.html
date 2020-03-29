@@ -4,33 +4,38 @@ layout: default
 
 <div class="home">
 
-  <div class="line">&nbsp;</div>
+  <div class="hero">
 
-  {{ content }}
+    <div class="line">&nbsp;</div>
 
-  <div class="line">&nbsp;</div>
+    {{ content }}
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+    <div class="line">&nbsp;</div>
+  
+  </div>
 
-  {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+    {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
 
-  {%- for post in posts -%}
-  <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url({{ site.baseurl }}{{ post.image }});">
-    <div class="card-title">
-      {{ post.title | escape }}
-    </div>
-    <div class="card-caption">
-        <time class="dt-published" datetime="{{ post.date | date: date_format }}">
-          {{ post.date | date: date_format }}
-        </time>
-    </div>
-    <br>
-  </a>
-  {%- endfor -%}
+    {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+
+    {%- for post in posts -%}
+    <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url({{ site.baseurl }}{{ post.image }});">
+      <div class="card-title">
+        {{ post.title | escape }}
+      </div>
+      <div class="card-caption">
+          <time class="dt-published" datetime="{{ post.date | date: date_format }}">
+            {{ post.date | date: date_format }}
+          </time>
+      </div>
+      <br>
+    </a>
+    {%- endfor -%}
+
 
   {% if site.paginate %}
       <ul class="pagination">
