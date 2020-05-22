@@ -144,7 +144,9 @@ span {
 
 @media (prefers-color-scheme:dark) {
 	body {
-		background: #121212;
+		/* background: #0E141B; */
+		/* background: #1B1E21; */
+		background: #21212C;
 		color: #fff;
 	}
 	a {
