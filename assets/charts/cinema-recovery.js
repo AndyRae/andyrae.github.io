@@ -2,6 +2,7 @@ google.charts.load('current', {'packages':['controls', 'corechart', 'line']});
 google.charts.setOnLoadCallback(drawTrends);
 google.charts.setOnLoadCallback(drawBubble);
 google.charts.setOnLoadCallback(drawBoxOffice);
+google.charts.setOnLoadCallback(drawStocks);
 
 var trendsOptions = {
 	height: 380,
@@ -36,7 +37,7 @@ var trendsOptions = {
 	'hAxis': {
 		format: 'MMM YY',
 		'gridlines' : {
-			'count': 3 },
+			'count': 6 },
 		textStyle: {color: '#737373'}
 	},
 
@@ -114,6 +115,44 @@ var boxOfficeOptions = {
 			'count': 3 },
 		textStyle: {color: '#737373'}
 	},
+};
+
+var stockMarketOptions = {
+	height: 380,
+	width: "100%",
+	'fontSize': 12,
+	'backgroundColor': 'transparent',
+	curveType: 'function',
+	legend: { 
+		position: 'top',
+		maxLines: 2,
+		textStyle: {color: '#737373'} },
+	'chartArea': {
+		left: 70,
+		right: 35,
+		top: 50,
+		bottom: 50,
+		},
+	'vAxis': { 
+		'title': 'Fluctuation',
+		titleTextStyle: {
+			color: '#737373'
+		},
+		viewWindowMode: 'explicit',
+		viewWindow: {
+			max:1,
+			min:0
+		},
+		'gridlines' : {
+			'count': 0 },
+		textStyle: {color: '#737373'}
+		},
+	'hAxis': {
+		format: 'MMM YY',
+		'gridlines' : {
+			'count': 3 },
+		textStyle: {color: '#737373'}
+	},
 
 };
 
@@ -157,4 +196,18 @@ function draw3(response) {
   var data = response.getDataTable();
   var chart = new google.visualization.LineChart(document.getElementById('boxoffice-vis'));
   chart.draw(data, boxOfficeOptions);
+};
+
+//stockmarkets
+function drawStocks() {
+    var queryString = 'select A, K, M, N, O, P, Q, R';
+    var query = new google.visualization.Query(
+        'https://docs.google.com/spreadsheets/d/1NBWmLVVLQFYasJLAb-DZ10iHXS_ASRgPQ3zwjGyZvZQ/gviz/tq?gid=206300699&headers=1&range=A1:S53&tq=' + queryString);
+    query.send(draw4);
+};
+//drawcharts
+function draw4(response) {
+  var data = response.getDataTable();
+  var chart = new google.visualization.LineChart(document.getElementById('stockmarket-vis'));
+  chart.draw(data, stockMarketOptions);
 };
