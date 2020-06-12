@@ -243,7 +243,7 @@ function draw4(response) {
 function drawCounters() {
     var queryString = 'select B';
     var query = new google.visualization.Query(
-        'https://docs.google.com/spreadsheets/d/1NBWmLVVLQFYasJLAb-DZ10iHXS_ASRgPQ3zwjGyZvZQ/gviz/tq?gid=1808648826&headers=0&range=B1:B7&tq=' + queryString);
+        'https://docs.google.com/spreadsheets/d/1NBWmLVVLQFYasJLAb-DZ10iHXS_ASRgPQ3zwjGyZvZQ/gviz/tq?gid=1808648826&headers=0&range=B1:B8&tq=' + queryString);
         query.send(draw6);
 };
 
@@ -255,4 +255,5 @@ function draw6(response) {
   document.getElementById('sentiment').innerHTML = Math.ceil(data.getValue(5, 0));
   document.getElementById('stock-change').innerHTML = Math.ceil(data.getValue(3, 0));
   document.getElementById('trends-change').innerHTML = Math.ceil(data.getValue(4, 0));
+  document.getElementById('box-office-change').innerHTML = Math.ceil(data.getValue(6, 0));
 };
