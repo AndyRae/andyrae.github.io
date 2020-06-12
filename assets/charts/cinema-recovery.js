@@ -1,10 +1,11 @@
 google.charts.load('current', {'packages':['controls', 'corechart', 'line', 'table']});
+google.charts.setOnLoadCallback(drawCounters);
 google.charts.setOnLoadCallback(drawTrends);
 google.charts.setOnLoadCallback(drawBubble);
 google.charts.setOnLoadCallback(drawTable);
 google.charts.setOnLoadCallback(drawBoxOffice);
 google.charts.setOnLoadCallback(drawStocks);
-google.charts.setOnLoadCallback(drawCounters);
+
 
 var trendsOptions = {
 	height: 380,
