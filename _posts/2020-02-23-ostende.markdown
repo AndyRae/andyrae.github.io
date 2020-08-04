@@ -1,7 +1,7 @@
 ---
 title: Ostende - Django for film seasons
 date: February 23, 2020
-image: /assets/images/ostende.png
+image: /assets/images/projects/ostende.png
 tag: projects
 ---
 
@@ -9,7 +9,7 @@ Ostende is an open source film screenings system, built with Python on Django.
 
 Ostende has one principle objective - build reusable infrastructure for film exhibition. Websites for seasons are often built with the wrong tools at great cost. Ostende makes it cheap, fast, and easy to deploy a website focussed on reaching people.
 
-![image](/assets/images/ostende.png)
+![image](/assets/images/projects/ostende.png)
 
 Ostende is audience focussed - enabling a user to find and discover film screenings by venue, location, film, and date. With the additional option for articles and editorial to frame a season. The design is clean, modern, and easy to build on.
 

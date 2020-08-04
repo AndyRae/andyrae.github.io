@@ -1,12 +1,12 @@
 ---
 title: UK Box Office Dashboard
 date: March 02, 2020
-image: /assets/images/uk-box-office.png
+image: /assets/images/projects/uk-box-office.png
 tag: projects
 permalink: uk-box-office-dashboard
 ---
 
-![image1](/assets/images/uk-box-office.png)
+![image1](/assets/images/projects/uk-box-office.png)
 
 The new UK Box Office dashboard is the only place you can find box office data this easily.
 

@@ -26,7 +26,7 @@ layout: default
       {% if post.status contains 'draft' %}
       {% else %}
 
-        <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url({{ site.baseurl }}{{ post.image }});">
+        <a href="{{ post.url | relative_url }}" class="card" style="background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url({{ site.baseurl }}{{ post.image }});">
           <div class="card-title">
             {{ post.title | escape }}
           </div>

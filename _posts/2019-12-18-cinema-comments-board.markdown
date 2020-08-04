@@ -1,7 +1,7 @@
 ---
 title: Making Sense of a Cinema Comments Board
 date: December 18, 2019
-image: /assets/images/cinema-board-1.jpg
+image: /assets/images/cinema-board/cinema-board-1.jpg
 tag: writing
 permalink: /writing/cinema-comments-board
 ---
@@ -14,7 +14,7 @@ The idea is simple: once you've seen a film, you can write a short review on a c
 
 I read this one at Broadway most mornings, and absolutely love it - because it’s not reviews from London or New York, but people watching and experiencing cinema in _our_ cinema. 
 
-![image](/assets/images/cinema-board-2.jpg)
+![image](/assets/images/cinema-board/cinema-board-2.jpg)
 
 Comment boards are beautiful in an analogue sense, a fun way to try and get a feeling of what people thought about a film over an opening weekend. 
 
@@ -24,11 +24,11 @@ I thought I'd give that a shot.
 
 Luckily Broadway have been saving the cards for the last three years, 1,236 of them, which looks like this. 
 
-![image](/assets/images/cinema-board-1.jpg)
+![image](/assets/images/cinema-board/cinema-board-1.jpg)
 
 Or here’s a handful.
 
-![image](/assets/images/cinema-board-3.gif)
+![image](/assets/images/cinema-board/cinema-board-3.gif)
 
 I digitised all 1,236 of the cards, then turned the handwriting into text, and then analysed the sentiment of each card¹.
 
@@ -36,7 +36,7 @@ Analysing sentiment means that we determine a score between -1 (very negative) t
 
 For example, analysing this review of _Sorry We Missed You_ last month, it received a very positive score of 0.89. 
 
-![image](/assets/images/cinema-board-4.png)
+![image](/assets/images/cinema-board/cinema-board-4.png)
 
 Over the 1,236 cards, we can now visualise how the films compared on average, taking the 100 most frequently reviewed, ordered by how positive the score was.
 
@@ -57,7 +57,7 @@ But given there are mostly only a few cards per film, we don’t want to dwell t
 
 Despite that, maybe the dataset is interesting if we see it as an approach of how people are talking about film when they leave the cinema, after all these are effectively immediate exit polls - no time for reflection, just hot takes. Here are some of those most used words on cards.
 
-![image](/assets/images/cinema-board-5.png)
+![image](/assets/images/cinema-board/cinema-board-5.png)
 
 Which again shows the simplicity of these cards. The audience communicate their feelings directly and without nuance. Generally the cards use a single short sentence with blunt and emotive language, rarely using complex ideas. The average card was only twelve words long with no room for detail, and the immediate language of cinema is succinct - "_very good_", "_love_", "_brilliant_". 
 
@@ -65,7 +65,7 @@ So whilst it's fun to try to visualise these audience dialogues. Unfortunately t
 
 Here they use audience reviews of films to create new film genres (outlined below), with a new data-driven approach rather than the traditional top-down way. The methodology in that case involved more in-depth reviews than quick comment cards. 
 
-![image](/assets/images/cinema-board-6.png)
+![image](/assets/images/cinema-board/cinema-board-6.png)
 
 
 Ultimately, it's probably most useful, and more fun, just to read the noticeboard ad-hoc on a Monday morning.

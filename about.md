@@ -13,6 +13,8 @@ image: /assets/images/1.jpg
 
 📈 I also occasionally [write](/tags/writing) about using data to find things out.
 
+🚀 I'm available to [hire](/hire).
+
 ☕️ I like to meet new people. Let me know if you want to grab a coffee.
 
 ## Contact

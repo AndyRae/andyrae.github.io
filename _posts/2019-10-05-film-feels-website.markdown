@@ -2,7 +2,7 @@
 title: Film Feels Website
 date: August 5, 2019
 publish_date: August 5, 2019
-image: /assets/images/film-feels-1.jpg
+image: /assets/images/film-feels/film-feels-1.jpg
 tag: projects
 ---
 
@@ -18,34 +18,34 @@ The website is built with Django in Python, and uses **Ostende**, a listing serv
 
 [filmfeels.co.uk](https://filmfeels.co.uk)
 
-![image](/assets/images/film-feels-1.jpg)
+![image](/assets/images/film-feels/film-feels-1.jpg)
 
 ---
 
-![image](/assets/images/film-feels-2.jpg)
+![image](/assets/images/film-feels/film-feels-2.jpg)
 
 ---
 
-![image](/assets/images/film-feels-3.jpg)
+![image](/assets/images/film-feels/film-feels-3.jpg)
 
 ---
 
-![image](/assets/images/film-feels-4.jpg)
+![image](/assets/images/film-feels/film-feels-4.jpg)
 
 ---
 
-![image](/assets/images/film-feels-5.jpg)
+![image](/assets/images/film-feels/film-feels-5.jpg)
 
 ---
 
-![image](/assets/images/film-feels-6.jpg)
+![image](/assets/images/film-feels/film-feels-6.jpg)
 
 ---
 
-![image](/assets/images/film-feels-7.jpg)
+![image](/assets/images/film-feels/film-feels-7.jpg)
 
 ---
 
-![image](/assets/images/film-feels-8.jpg)
+![image](/assets/images/film-feels/film-feels-8.jpg)
 
 It features a dark mode theme, available through the new media feature [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).

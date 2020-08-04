@@ -2,7 +2,7 @@
 title: Measuring the Cinema Sector Recovery Post COVID-19
 date: June 12, 2020
 tag: writing
-image: /assets/images/graph.png
+image: /assets/images/projects/graph.png
 permalink: cinema-recovery-post-covid-19
 ---
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

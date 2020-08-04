@@ -1,7 +1,7 @@
 ---
 title: Developing FilmResearch.org
 date: May 9, 2018
-image: /assets/images/fr-2.png
+image: /assets/images/projects/fr-2.png
 tag: projects
 ---
 
@@ -9,7 +9,7 @@ Back in February I [launched](https://rae.li/writing/launching-filmresearch-org)
 
 Since then I've added hundreds more resources, and made some other changes too...
 
-![website](/assets/images/fr-2.png)
+![website](/assets/images/projects/fr-2.png)
 
 I've rebuilt the site from the ground up with [Grav](https://getgrav.org). Making it easier to find and discover new and helpful resources.
 

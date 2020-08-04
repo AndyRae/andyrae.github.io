@@ -1,11 +1,11 @@
 ---
 title: Film Hub Central East Dashboard
 date: 09-08-2017
-image: /assets/images/fhce.png
+image: /assets/images/projects/fhce.png
 tag: projects
 ---
 
-![website](/assets/images/fhce.png)
+![website](/assets/images/projects/fhce.png)
 
 At Film Hub Central East we have over 30 projects running at any time.
 

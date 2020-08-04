@@ -1,7 +1,7 @@
 ---
 title: Retina Dance UK Website
 date: 14-05-2014
-image: /assets/images/retina.png
+image: /assets/images/projects/retina.png
 tag: projects
 ---
 
@@ -9,4 +9,4 @@ As Retina Dance UK enters [a new direction](http://retinadanceuk.com/new-directi
 
 [retinadanceuk.com](http://retinadanceuk.com)
 
-![retindance](/assets/images/retina.png)
+![retindance](/assets/images/projects/retina.png)
