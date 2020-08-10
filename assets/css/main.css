@@ -25,6 +25,11 @@ a:hover {
 	border-bottom: 2px solid #1565c0;
 	color: #1565c0;
 }
+
+hr {
+	margin-block-start: 2em;
+	margin-block-end: 2em;
+}
 /*nav*/
 .navbar-nav {
 	padding: 1.5%;
