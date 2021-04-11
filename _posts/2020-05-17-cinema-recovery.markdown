@@ -34,8 +34,9 @@ h6 {
 
 Cinemas are still closed across the world. But they will reopen, and it's hard to tell how successful they will be when that happens.
 
-Here are five indicators to help us understand how the sector is, and will recover in the post COVID-19 landscape. I'm looking at everything from Google Trends, to audience sentiment, and stock prices. 
-All of these graphs will update daily for the next few months.
+Here are five indicators to help us understand how the sector is, and will recover in the post COVID-19 landscape. I'm looking at everything from Google Trends, to audience sentiment, and stock prices.
+
+**I stopped monitoring on December 31 2020, but the data is preserved as a snapshot of how the year turned out.**
 
 <div class="line"></div>
 
