@@ -28,7 +28,7 @@ twitter_username: AndyRae_
 paginate: 12
 permalink: /:title.html
 
-description: Code, data, and cinemas.
+description: Developer
 twitter:
   username: AndyRae_
   card: summary
