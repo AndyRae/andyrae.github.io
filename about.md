@@ -15,7 +15,7 @@ image: /assets/images/1.jpg
 
 🚀 I'm available to [hire](/hire).
 
-☕️ I like to meet new people. Let me know if you want to grab a coffee.
+☕️ I like to meet new people, let me know if you want to grab a coffee.
 
 ## Contact
 
