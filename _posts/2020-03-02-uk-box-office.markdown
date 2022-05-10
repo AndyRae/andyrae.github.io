@@ -12,7 +12,7 @@ The new UK Box Office dashboard is the only place you can find box office data t
 
 Box office is the one metric that counts in cinema - despite hype, critics, and marketing; audiences are always the great leveller. I check the latest numbers every week, but unfortunately this _still_ means comparing excel sheets to see what's going on. So I finally got round to spending a weekend making it much easier, and more fun.
 
-<a href="https://boxoffice.rae.li" target="blank">boxoffice.rae.li</a>
+[boxoffice.rae.li](https://boxofficedata.co.uk){:target="_blank"}
 
 If you want to find out how _Parasite_ is doing this month, you don’t have to open the last four weeks excel files, or wait for Screen to report it.
 
