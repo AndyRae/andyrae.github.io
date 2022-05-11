@@ -13,17 +13,17 @@ body {
 	  background-color: #FAFAFA;
 }
 ::selection {
-	background: #1565c0;
-	color: white;
+	background: #BEE4C5;
+	color: #000;
 }
 a {
 	color: #423737;
-	border-bottom: 2px solid #1565c0;
+	border-bottom: 2px solid #BEE4C5;
 	text-decoration: none;
 }
 a:hover {
-	border-bottom: 2px solid #1565c0;
-	color: #1565c0;
+	border-bottom: 2px solid #BEE4C5;
+	color: #BEE4C5;
 }
 
 hr {
@@ -48,7 +48,6 @@ hr {
 }
 .page {
 	margin: 0% auto;
-	/* max-width: 680px; */
 	max-width: 720px;
 	padding: 0 24px;
 }
@@ -80,7 +79,7 @@ hr {
 	height: 293px;
 	margin: 14px;
 	border-bottom: none;
-	background: #1565c0;
+	background: #BEE4C5;
 	background-position: center;
 	background-size: cover;
 	color: #fff;
@@ -89,8 +88,8 @@ hr {
 
 .card:hover {
 	box-shadow: 0 15px 30px rgba(0,0,0,.40);
-	transform: translateY(-3px);
-	transition: all .3s cubic-bezier(.77,0,.175,1);
+	transform: translateY(-9px);
+	transition: all .4s cubic-bezier(.77,0,.175,1);
 	color: #fff;
 	border-bottom: none;
 }
@@ -150,6 +149,12 @@ span {
 	box-shadow: 0 0 50px 0 rgba(0,0,0,.10);
 }
 .post-content {
+}
+
+.footer {
+	height: 300px;
+	background: #21212C;
+	/* margin-bottom: 100px; */
 }
 
 @media (prefers-color-scheme:dark) {
