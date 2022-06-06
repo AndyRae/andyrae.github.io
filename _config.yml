@@ -30,7 +30,7 @@ url: "https://rae.li" # the base hostname & protocol for your site, e.g. http://
 twitter_username: AndyRae_
 # github_username:  andyrae
 
-paginate: 18
+paginate: 15
 permalink: /:title.html
 
 description: Developer
