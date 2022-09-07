@@ -28,10 +28,12 @@ export const Item = ({ title, link, image, caption }) => {
 				style={{ zIndex: -10 }}
 				quality={100}
 			></NextImage>
-			<Heading size='lg' fontWeight={'600'} my='2'>
+			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
 				<LinkOverlay href={link}>{title}</LinkOverlay>
 			</Heading>
-			<Text mt={5}>{caption}</Text>
+			<Text mt={5} textColor='white'>
+				{caption}
+			</Text>
 		</LinkBox>
 	);
 };

@@ -1,17 +1,19 @@
 import Head from 'next/head';
-import { Navbar } from '../components/Navbar';
+import { Navbar } from './Navbar';
 import { Container, VStack } from '@chakra-ui/react';
 
 export default function Layout({ children, home }) {
 	return (
 		<Container maxW={'container.lg'}>
 			<Head>
-				<meta name='description' content='Description!' />
 				<meta charset='utf-8' />
 				<meta http-equiv='X-UA-Compatible' content='IE=edge' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='apple-mobile-web-app-capable' content='yes' />
 				<meta name='mobile-web-app-capable' content='yes' />
+
+				<title>Andy Rae | Software Engineer</title>
+				<meta name='description' content='Description!' />
 
 				<link
 					rel='apple-touch-icon'
@@ -31,6 +33,8 @@ export default function Layout({ children, home }) {
 					href='assets/icons/icon-hires.png'
 				/>
 			</Head>
+
+			<Navbar />
 
 			<VStack pb={'300px'}>{children}</VStack>
 		</Container>
