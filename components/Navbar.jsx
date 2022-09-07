@@ -1,17 +1,8 @@
 import NextLink from 'next/link';
-import { ReactNode } from 'react';
-import {
-	Box,
-	Flex,
-	Link,
-	Button,
-	useColorModeValue,
-	Stack,
-	useColorMode,
-} from '@chakra-ui/react';
+import { Box, Flex, Link, Button, Stack, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const NavLink = ({ link, children }) => (
+export const NavLink = ({ link, children }) => (
 	<NextLink href={link} passHref>
 		<Link
 			px={2}
@@ -20,7 +11,7 @@ const NavLink = ({ link, children }) => (
 				textDecoration: 'none',
 			}}
 			href={link}
-			borderBottomColor='orange'
+			borderBottomColor='green.200'
 			borderBottomWidth='2px'
 		>
 			{children}
@@ -43,7 +34,7 @@ const Links = [
 	},
 ];
 
-export const Nav = () => {
+export const Navbar = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
 		<>
@@ -52,14 +43,14 @@ export const Nav = () => {
 					<Box></Box>
 
 					<Flex alignItems={'center'}>
-						<Stack direction={'row'} spacing={7}>
+						<Stack direction={'row'} spacing={6}>
 							{Links.map((link) => (
 								<NavLink key={link.text} link={link.href}>
 									{link.text}
 								</NavLink>
 							))}
 
-							<Button onClick={toggleColorMode}>
+							<Button onClick={toggleColorMode} variant='ghost'>
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
 						</Stack>

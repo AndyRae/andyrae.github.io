@@ -1,22 +1,23 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import { Nav } from '../components/Navbar';
+import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
+import { ItemList } from '../components/ItemList';
+import { Flex, Heading, VStack, HStack } from '@chakra-ui/react';
 
 export default function Home() {
 	return (
 		<Layout>
-			<div>
-				<Head>
-					<title>Andy Rae | Software Engineer</title>
-				</Head>
+			<Head>
+				<title>Andy Rae | Software Engineer</title>
+			</Head>
 
-				<main>
-					{/* <Navbar /> */}
-					<Nav />
-					<Hero />
-				</main>
-			</div>
+			<Navbar />
+
+			<VStack spacing={8} mt={8}>
+				<Hero />
+				<ItemList />
+			</VStack>
 		</Layout>
 	);
 }
