@@ -1,7 +1,6 @@
 import NextImage from 'next/image';
 import NextLink from 'next/link';
 import {
-	Box,
 	LinkBox,
 	LinkOverlay,
 	SimpleGrid,
@@ -9,84 +8,52 @@ import {
 	Text,
 } from '@chakra-ui/layout';
 
-// radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/assets/images/film-feels/curious-1.png)
-
-export const Item = ({ title, link, image, caption }) => {
+export const Item = ({ title, link, image, date }) => {
 	return (
 		<LinkBox
-			// backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(${image})`}
-			// bgPosition="center"
-			// bgRepeat="no-repeat"
-			// bgSize="cover"
+			backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))`}
 			w='293px'
 			h='293px'
 			p={5}
+			_hover={{
+				boxShadow: 'lg',
+				transform: 'translateY(-9px)',
+				transition: 'all .4s cubic-bezier(.77,0,.175,1)',
+				backgroundImage:
+					'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))',
+			}}
 		>
 			<NextImage
 				src={image}
 				layout='fill'
+				objectFit='cover'
 				style={{ zIndex: -10 }}
 				quality={100}
-			></NextImage>
+			/>
+
 			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
-				<LinkOverlay href={link}>{title}</LinkOverlay>
+				<NextLink href={link} passHref>
+					<LinkOverlay>{title}</LinkOverlay>
+				</NextLink>
 			</Heading>
+
 			<Text mt={5} textColor='white'>
-				{caption}
+				{date}
 			</Text>
 		</LinkBox>
 	);
 };
 
-const Items = [
-	{
-		title: 'Hello world',
-		link: '/about',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-	{
-		title: 'Hello world',
-		link: '/',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-	{
-		title: 'Hello world',
-		link: '/',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-	{
-		title: 'Hello world',
-		link: '/',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-	{
-		title: 'Hello world',
-		link: '/',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-	{
-		title: 'Hello world',
-		link: '/',
-		image: '/assets/images/1.jpg',
-		caption: 'June 2022',
-	},
-];
-
-export const ItemList = () => {
+export const ItemList = ({ posts }) => {
 	return (
 		<SimpleGrid columns={[1, 3]} spacing={8}>
-			{Items.map((item) => (
+			{posts.map((item, i) => (
 				<Item
-					key={item.title}
+					key={i}
 					title={item.title}
-					link={item.link}
+					link={item.permalink}
 					image={item.image}
-					caption={item.caption}
+					date={item.date}
 				/>
 			))}
 		</SimpleGrid>
