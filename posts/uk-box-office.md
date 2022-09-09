@@ -1,6 +1,6 @@
 ---
 title: UK Box Office Dashboard
-date: March 02, 2020
+date: '2020-03-02'
 image: /assets/images/projects/uk-box-office.png
 tag: projects
 permalink: uk-box-office-dashboard

@@ -1,6 +1,6 @@
 ---
 title: Film Feels Curious
-date: June 05, 2022
+date: '2022-06-05'
 image: /assets/images/film-feels/curious-1.png
 tag: projects
 permalink: film-feels-curious

@@ -1,6 +1,6 @@
 ---
 title: Google Mobility Data Dashboard
-date: January 29, 2021
+date: '2021-01-29'
 image: /assets/images/mobility-data/mobility-data-1.png
 tag: projects
 permalink: google-mobility-data-dashboard

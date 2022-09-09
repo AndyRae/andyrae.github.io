@@ -1,6 +1,6 @@
 ---
 title: Film Hub Midlands Dashboard
-date: April 10, 2020
+date: '2020-04-10'
 image: /assets/images/fhm/fhm-1.png
 tag: projects
 permalink: film-hub-midlands-dashboard

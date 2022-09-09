@@ -1,6 +1,6 @@
 ---
 title: Broadway Cinema Dashboard
-date: July 10, 2020
+date: '2020-07-10'
 image: /assets/images/broadway/broadway-1.png
 tag: projects
 permalink: broadway-dashboard

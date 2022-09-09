@@ -1,6 +1,6 @@
 ---
 title: Film Feels Connected Website
-date: August 3, 2020
+date: '2020-08-03'
 image: /assets/images/film-feels/connected-1.png
 tag: projects
 permalink: film-feels-connected

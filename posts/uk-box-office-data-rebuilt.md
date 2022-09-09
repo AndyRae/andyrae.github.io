@@ -1,6 +1,6 @@
 ---
 title: Rebuilding UK Box Office
-date: May 05, 2022
+date: '2022-05-05'
 image: /assets/images/uk-box-office/1.png
 tag: projects
 permalink: uk-box-office-data-rebuilt

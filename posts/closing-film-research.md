@@ -1,6 +1,6 @@
 ---
 title: Closing FilmResearch.org
-date: June 20, 2021
+date: '2021-06-05'
 image: /assets/images/projects/fr-3.png
 tag: projects
 permalink: closing-film-research
