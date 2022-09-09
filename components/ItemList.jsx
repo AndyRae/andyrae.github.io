@@ -32,7 +32,7 @@ export const Item = ({ title, link, image, date }) => {
 			/>
 
 			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
-				<NextLink href={link} passHref>
+				<NextLink href={`posts/${link}`} passHref>
 					<LinkOverlay>{title}</LinkOverlay>
 				</NextLink>
 			</Heading>

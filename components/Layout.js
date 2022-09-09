@@ -36,7 +36,9 @@ export default function Layout({ children, home }) {
 
 			<Navbar />
 
-			<VStack pb={'300px'}>{children}</VStack>
+			<VStack pb={'300px'} pt={'100px'}>
+				{children}
+			</VStack>
 		</Container>
 	);
 }

@@ -9,6 +9,7 @@ export const NavLink = ({ link, children }) => (
 			py={1}
 			_hover={{
 				textDecoration: 'none',
+				color: 'green.200',
 			}}
 			href={link}
 			borderBottomColor='green.200'
