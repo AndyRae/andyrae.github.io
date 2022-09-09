@@ -1,8 +1,8 @@
-import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
+import Layout from '../../components/layout';
+import { Date } from '../../components/Date';
 import { VStack, Heading } from '@chakra-ui/react';
-// import Date from '../../components/date'
 
 export default function Post({ postData }) {
 	return (
@@ -10,9 +10,9 @@ export default function Post({ postData }) {
 			<Head>
 				<title>{postData.title}</title>
 			</Head>
-			<VStack maxW={'container.md'} alignItems='left' spacing={8}>
+			<VStack maxW={'container.md'} alignItems='left' spacing={8} pt={'100px'}>
 				<Heading>{postData.title}</Heading>
-				<div>{postData.date}</div>
+				<Date dateString={postData.date} />
 				<div
 					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
 					className='markdown'

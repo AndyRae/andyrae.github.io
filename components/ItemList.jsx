@@ -8,8 +8,10 @@ import {
 	Text,
 	Box,
 } from '@chakra-ui/layout';
+import { Date } from './Date';
 
 export const Item = ({ title, link, image, date }) => {
+	console.log(date);
 	return (
 		<LinkBox
 			backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))`}
@@ -44,7 +46,7 @@ export const Item = ({ title, link, image, date }) => {
 			</Heading>
 
 			<Text mt={5} textColor='white'>
-				{date}
+				<Date dateString={date} />
 			</Text>
 		</LinkBox>
 	);
