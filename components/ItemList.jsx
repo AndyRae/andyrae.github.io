@@ -6,6 +6,7 @@ import {
 	SimpleGrid,
 	Heading,
 	Text,
+	Box,
 } from '@chakra-ui/layout';
 
 export const Item = ({ title, link, image, date }) => {
@@ -21,19 +22,24 @@ export const Item = ({ title, link, image, date }) => {
 				transition: 'all .4s cubic-bezier(.77,0,.175,1)',
 				backgroundImage:
 					'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))',
+				zIndex: 1,
 			}}
 		>
 			<NextImage
 				src={image}
 				layout='fill'
 				objectFit='cover'
-				style={{ zIndex: -10 }}
+				style={{ zIndex: -1 }}
 				quality={100}
 			/>
 
 			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
 				<NextLink href={`posts/${link}`} passHref>
-					<LinkOverlay>{title}</LinkOverlay>
+					<LinkOverlay
+						backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))`}
+					>
+						{title}
+					</LinkOverlay>
 				</NextLink>
 			</Heading>
 

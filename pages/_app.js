@@ -32,6 +32,10 @@ const theme = extendTheme({
 					marginInlineStart: '0px',
 					marginInlineEnd: '0px',
 				},
+				ul: {
+					fontSize: '1.25em',
+					lineHeight: '1.5',
+				},
 				a: {
 					borderBottomColor: '#9AE6B4',
 					borderBottomWidth: '2px',
