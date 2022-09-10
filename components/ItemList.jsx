@@ -14,7 +14,11 @@ export const Item = ({ title, link, image, date }) => {
 	console.log(date);
 	return (
 		<LinkBox
-			backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))`}
+			background={
+				image
+					? `radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))`
+					: 'green.200'
+			}
 			w='293px'
 			h='293px'
 			p={5}
@@ -22,18 +26,18 @@ export const Item = ({ title, link, image, date }) => {
 				boxShadow: 'lg',
 				transform: 'translateY(-9px)',
 				transition: 'all .4s cubic-bezier(.77,0,.175,1)',
-				backgroundImage:
-					'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))',
 				zIndex: 1,
 			}}
 		>
-			<NextImage
-				src={image}
-				layout='fill'
-				objectFit='cover'
-				style={{ zIndex: -1 }}
-				quality={100}
-			/>
+			{image && (
+				<NextImage
+					src={image}
+					layout='fill'
+					objectFit='cover'
+					style={{ zIndex: -1 }}
+					quality={100}
+				/>
+			)}
 
 			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
 				<NextLink href={`posts/${link}`} passHref>
@@ -59,7 +63,7 @@ export const ItemList = ({ posts }) => {
 				<Item
 					key={i}
 					title={item.title}
-					link={item.permalink}
+					link={item.id}
 					image={item.image}
 					date={item.date}
 				/>
