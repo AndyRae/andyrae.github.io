@@ -8,7 +8,7 @@ permalink: uk-box-office-data-studio-to-flask
 
 ![image](/assets/images/uk-box-office/1.png)
 
-About two years ago, I launched the [UK Box Office](./uk-box-office-dashboard) dashboard. It was a simple web app that I built to track the box office figures for UK films.
+About two years ago, I launched the [UK Box Office](/posts/uk-box-office) dashboard. It was a simple web app that I built to track the box office figures for UK films.
 
 > _The new UK Box Office dashboard is the only place you can find box office data this easily._
 
@@ -16,11 +16,11 @@ About two years ago, I launched the [UK Box Office](./uk-box-office-dashboard) d
 
 Downtime during the pandemic did give me room to rebuild it from scratch.
 
-It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk){:target="\_blank"}
+It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk)
 
 ![image](/assets/images/uk-box-office/gif.gif)
 
-You can read a write-up of what's changed [over here](./uk-box-office-data-rebuilt).
+You can read a write-up of what's changed [over here](/posts/uk-box-office-data-rebuilt).
 
 On the technical side, it's changed completely.
 
@@ -34,4 +34,4 @@ It's now so fast, and much more fully featured than using Google Data Studio.
 
 It pretty much runs itself now, using APScheduler to fetch the new data every week, and even uses Prophet to forecast the next few months box office figures. Which is pretty uncertain right now - but something for another post.
 
-The code is available on [Github](https://github.com/AndyRae/uk-box-office){:target="\_blank"}.
+The code is available on [Github](https://github.com/AndyRae/uk-box-office).

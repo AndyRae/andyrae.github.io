@@ -8,7 +8,7 @@ permalink: uk-box-office-data-rebuilt
 
 ![image](/assets/images/uk-box-office/1.png)
 
-About two years ago, I launched the [UK Box Office](./uk-box-office) dashboard. It was a simple web app that I built to track the box office figures for UK films.
+About two years ago, I launched the [UK Box Office](/posts/uk-box-office) dashboard. It was a simple web app that I built to track the box office figures for UK films.
 
 > _The new UK Box Office dashboard is the only place you can find box office data this easily._
 
@@ -18,7 +18,7 @@ This was a few weeks before COVID-19 shut down cinemas in the UK, and rendered i
 
 Downtime during the pandemic did give me room to rebuild it from scratch.
 
-It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk){:target="\_blank"}
+It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk)
 
 ![image](/assets/images/uk-box-office/gif.gif)
 
@@ -26,8 +26,8 @@ It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk){:target="\_b
 - You can link directly to films, distributors, and time periods.
 - Full featured search.
 - Export data to CSV, JSON, and Excel.
-- Ability to create reports, for example the [Distributor Market Share](https://boxofficedata.co.uk/reports/distributor-market-share){:target="\_blank"}.
-- Experiment with other ideas, like [forecasting](https://boxofficedata.co.uk/reports/forecast){:target="\_blank"} and comparisons.
+- Ability to create reports, for example the [Distributor Market Share](https://boxofficedata.co.uk/reports/distributor-market-share).
+- Experiment with other ideas, like [forecasting](https://boxofficedata.co.uk/reports/forecast) and comparisons.
 - Public API for external use.
 
 ![image](/assets/images/uk-box-office/3.png)
@@ -35,4 +35,4 @@ It's now live at [boxofficedata.co.uk](https://boxofficedata.co.uk){:target="\_b
 Overall, it's much more inline with tools like Box Office Mojo, and The Numbers. Except in £, and with data with no gaps, right back to 2001.
 Much more inline with box office mojo, and The Numbers. In £, and much more data.
 
-You can read a technical write-up of how it works [over here](./uk-box-office-data-studio-to-flask).
+You can read a technical write-up of how it works [over here](/posts/uk-box-office-data-studio-to-flask).

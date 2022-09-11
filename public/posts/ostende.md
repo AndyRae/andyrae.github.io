@@ -15,6 +15,6 @@ Ostende is audience focussed - enabling a user to find and discover film screeni
 
 Built with Django, and using Django Rest Framework, it's also a great example of an efficient Django app in production. It can handle tens of thousands of screenings on a low cost virtual machine.
 
-Find an example at [filmfeels.co.uk](https://filmfeels.co.uk) - used for the [_Obsession (2019)_](/film-feels-website) and _Connected (2020)_ seasons.
+Find an example at [filmfeels.co.uk](https://filmfeels.co.uk) - used for the [_Obsession (2019)_](/posts/film-feels-website) and _Connected (2020)_ seasons.
 
 The code is open source, and can be found on [Github](https://github.com/AndyRae/ostende).

@@ -32,6 +32,4 @@ Top level and allows for "deep dive" into projects. Ability to drill to time, pr
 
 ---
 
-Have a problem that needs a dashboard? I can probably [build one for you](/hire).
-
 _Note - the images on this page show sample data, and are not reflective of Film Hub Midlands._

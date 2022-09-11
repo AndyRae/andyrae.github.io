@@ -12,16 +12,14 @@ Film Feels returns for 2022, once again celebrating films’ unique ability to t
 
 ![image](/assets/images/film-feels/curious-1.png)
 
-This website builds on the [launch](/film-feels-website) of filmfeels.co.uk three years ago, using [Ostende](/ostende) in production. Ostende is built with Django in Python, and is open source.
+This website builds on the [launch](/posts/film-feels-website) of filmfeels.co.uk three years ago, using [Ostende](/posts/ostende) in production. Ostende is built with Django in Python, and is open source.
 
 ![image](/assets/images/film-feels/curious-4.png)
 
 The objective was to build a powerful and flexible backend, with a clean frontend design that lets the films speak for themselves.
 
-[filmfeels.co.uk](https://filmfeels.co.uk){:target="\_blank"}
+[filmfeels.co.uk](https://filmfeels.co.uk)
 
 ![image](/assets/images/film-feels/curious-3.png)
 
 ---
-
-Have a problem that needs a website? I can probably [build one for you](/hire).

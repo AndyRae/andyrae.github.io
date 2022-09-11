@@ -5,7 +5,7 @@ image: /assets/images/projects/fr-2.png
 tag: projects
 ---
 
-Back in February I [launched](https://rae.li/writing/launching-filmresearch-org) a beta of [FilmResearch.org](https://filmresearch.org), a library of film research, reports, and data sets from the UK film industry.
+Back in February I [launched](/posts/launching-filmresearch-org) a beta of [FilmResearch.org](https://filmresearch.org), a library of film research, reports, and data sets from the UK film industry.
 
 Since then I've added hundreds more resources, and made some other changes too...
 
@@ -19,5 +19,3 @@ This isn't just a backup, but also a way of being very transparent about the con
 I'm aware there's a technical learning curve to Github, Markdown, and Grav... so I've retained the easier way of reporting any edits as well.
 
 And it's all open source - so anyone can download the repository and create their own.
-
-**The best place to get started is to explore - [filmresearch.org/explore](https://filmresearch.org/explore)**

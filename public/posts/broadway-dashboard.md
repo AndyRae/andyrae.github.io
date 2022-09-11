@@ -8,7 +8,7 @@ permalink: broadway-dashboard
 
 ![image](/assets/images/broadway/broadway-1.png)
 
-Broadway is nationally recognised as the cultural leader for independent cinema, arts, and technology in the Midlands, and is the lead organisation for [Film Hub Midlands](/film-hub-midlands-dashboard).
+Broadway is nationally recognised as the cultural leader for independent cinema, arts, and technology in the Midlands, and is the lead organisation for [Film Hub Midlands](/posts/film-hub-midlands-dashboard).
 
 I built this dashboard to unify business data from across the organisation, using Python for the data pipeline and Google Data Studio for visualisation.
 
@@ -18,7 +18,7 @@ I believe that dashboards are the best way to:
 - Remove gatekeepers, and increase safe access to data.
 - Increase efficiency, and data confidence within teams.
 
-The data pipeline automatically imports from Vista box office system PDF files, this code can be found as part of the [Auspex](/auspex-box-office-pipeline) data pipeline, which essentially extends it for use with machine learning. Additionally, e-commerce data from Google Analytics is extracted for each film.
+The data pipeline automatically imports from Vista box office system PDF files, this code can be found as part of the [Auspex](/posts/auspex-box-office-pipeline) data pipeline, which essentially extends it for use with machine learning. Additionally, e-commerce data from Google Analytics is extracted for each film.
 
 ---
 
@@ -53,7 +53,5 @@ The power of using Google Data Studio is that everyone in the organisation can e
 Ultimately the aim is to aid decision making both on a strategic planning level, and in tactical delivery. For a cinema to continue to prosper, they have to adapt to becoming a modern organisation that uses software to find an edge. Cinemas [have to become a software companies](https://www.satellitetoday.com/innovation/2019/02/26/microsoft-ceo-every-company-is-now-a-software-company/).
 
 ---
-
-Have a problem that needs a dashboard? I can probably [build one for you](/hire).
 
 _Note - the images on this page show sample data, and are not reflective of Broadway._

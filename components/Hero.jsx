@@ -37,12 +37,15 @@ export const Hero = () => {
 				</Text>
 			</VStack>
 
-			<HStack spacing={[0, 6]}>
+			<HStack spacing={[0, 6]} justifyContent='center'>
 				<NavLink text='Twitter' link='https://twitter.com/AndyRae_' isExternal>
 					<Button
 						leftIcon={<FaTwitter />}
 						colorScheme='green.100'
 						variant='link'
+						_hover={{
+							textDecoration: 'none',
+						}}
 					>
 						Twitter
 					</Button>
