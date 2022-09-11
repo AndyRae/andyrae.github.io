@@ -1,19 +1,16 @@
-import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Layout from '../../components/layout';
-import { Date } from '../../components/Date';
+import Layout from '../components/layout';
+import { Hero } from '../components/Hero';
 import { VStack, Heading } from '@chakra-ui/react';
+import { getPageData } from '../lib/posts';
 
-export default function Post({ postData }) {
+export default function About({ postData }) {
+	const id = 'about';
 	return (
 		<Layout>
-			<Head>
-				<title>{postData.title}</title>
-			</Head>
-
+			<Head></Head>
 			<VStack maxW={'container.md'} alignItems='left' spacing={8} pt={'100px'}>
 				<Heading>{postData.title}</Heading>
-				<Date dateString={postData.date} />
 				<div
 					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
 					className='markdown'
@@ -24,16 +21,8 @@ export default function Post({ postData }) {
 	);
 }
 
-export async function getStaticPaths() {
-	const paths = getAllPostIds();
-	return {
-		paths,
-		fallback: false,
-	};
-}
-
 export async function getStaticProps({ params }) {
-	const postData = await getPostData(params.id);
+	const postData = await getPageData('about');
 	return {
 		props: {
 			postData,

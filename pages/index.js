@@ -6,13 +6,14 @@ import { VStack } from '@chakra-ui/react';
 import { getSortedPostsData } from '../lib/posts';
 
 export default function Home({ allPostsData }) {
-	console.log(allPostsData);
 	return (
 		<Layout>
 			<Head></Head>
 
 			<VStack spacing={8} mt={8}>
+				<div className='line' />
 				<Hero />
+				<div className='line' />
 				<ItemList posts={allPostsData} />
 			</VStack>
 		</Layout>

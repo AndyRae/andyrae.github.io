@@ -2,7 +2,7 @@ import NextLink from 'next/link';
 import { Box, Flex, Link, Button, Stack, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-export const NavLink = ({ link, children }) => (
+export const NavLink = ({ link, children, ...rest }) => (
 	<NextLink href={link} passHref>
 		<Link
 			px={2}
@@ -14,6 +14,7 @@ export const NavLink = ({ link, children }) => (
 			href={link}
 			borderBottomColor='green.200'
 			borderBottomWidth='2px'
+			{...rest}
 		>
 			{children}
 		</Link>
@@ -25,14 +26,14 @@ const Links = [
 		text: 'Home',
 		href: '/',
 	},
-	{
-		text: 'About',
-		href: '/about',
-	},
-	{
-		text: 'Projects',
-		href: '/projects',
-	},
+	// {
+	// 	text: 'About',
+	// 	href: '/about',
+	// },
+	// {
+	// 	text: 'Projects',
+	// 	href: '/projects',
+	// },
 ];
 
 export const Navbar = () => {

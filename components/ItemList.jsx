@@ -7,11 +7,13 @@ import {
 	Heading,
 	Text,
 	Box,
-} from '@chakra-ui/layout';
+	Button,
+	Fade,
+} from '@chakra-ui/react';
 import { Date } from './Date';
+import { useDisclosure } from '@chakra-ui/react';
 
 export const Item = ({ title, link, image, date }) => {
-	console.log(date);
 	return (
 		<LinkBox
 			background={
@@ -19,8 +21,8 @@ export const Item = ({ title, link, image, date }) => {
 					? `radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))`
 					: 'green.200'
 			}
-			w='293px'
-			h='293px'
+			w='263px'
+			h='263px'
 			p={5}
 			_hover={{
 				boxShadow: 'lg',
@@ -39,7 +41,7 @@ export const Item = ({ title, link, image, date }) => {
 				/>
 			)}
 
-			<Heading size='lg' textColor='white' fontWeight={'600'} my='2'>
+			<Heading size='md' textColor='white' fontWeight={'600'} my='2'>
 				<NextLink href={`posts/${link}`} passHref>
 					<LinkOverlay
 						backgroundImage={`radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))`}
@@ -57,17 +59,51 @@ export const Item = ({ title, link, image, date }) => {
 };
 
 export const ItemList = ({ posts }) => {
+	const { isOpen, onToggle } = useDisclosure();
+
 	return (
-		<SimpleGrid columns={[1, 3]} spacing={8}>
-			{posts.map((item, i) => (
-				<Item
-					key={i}
-					title={item.title}
-					link={item.id}
-					image={item.image}
-					date={item.date}
-				/>
-			))}
-		</SimpleGrid>
+		<>
+			<SimpleGrid columns={[1, 2, 3]} spacing={6} pt='10'>
+				{posts.slice(0, 6).map((item, i) => (
+					<Item
+						key={i}
+						title={item.title}
+						link={item.id}
+						image={item.image}
+						date={item.date}
+					/>
+				))}
+			</SimpleGrid>
+
+			<Button
+				px={2}
+				py={1}
+				_hover={{
+					textDecoration: 'none',
+					color: 'green.200',
+				}}
+				borderBottomColor='green.200'
+				borderBottomWidth='2px'
+				variant='link'
+				borderRadius='0'
+				onClick={onToggle}
+			>
+				More
+			</Button>
+
+			<Fade in={isOpen}>
+				<SimpleGrid columns={[1, 3]} spacing={8} pt='10'>
+					{posts.slice(6).map((item, i) => (
+						<Item
+							key={i}
+							title={item.title}
+							link={item.id}
+							image={item.image}
+							date={item.date}
+						/>
+					))}
+				</SimpleGrid>
+			</Fade>
+		</>
 	);
 };

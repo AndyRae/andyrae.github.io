@@ -16,6 +16,13 @@ const theme = extendTheme({
 	},
 	styles: {
 		global: {
+			'.line': {
+				border: '0',
+				height: '0',
+				borderTop: '1px solid rgba(0, 0, 0, 0.1)',
+				mX: '75px',
+				width: '100px',
+			},
 			'.markdown': {
 				display: 'flex',
 				flexDirection: 'column',
