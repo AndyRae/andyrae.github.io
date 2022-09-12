@@ -1,27 +1,19 @@
 import { NavLink } from './Navbar';
-import {
-	Flex,
-	Heading,
-	VStack,
-	HStack,
-	Text,
-	Icon,
-	Button,
-} from '@chakra-ui/react';
+import { Heading, VStack, HStack, Text, Button } from '@chakra-ui/react';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
 export const Hero = () => {
 	return (
 		<VStack
-			alignItems={'left'}
+			alignItems='left'
 			spacing={8}
 			mt={20}
-			minH={'50vh'}
-			verticalAlign={'center'}
+			minH='50vh'
+			verticalAlign='center'
 		>
-			<VStack spacing={8} alignItems={'left'} px={5}>
-				<Heading fontWeight={'200'}>Hello! I'm Andy.</Heading>
+			<VStack spacing={8} alignItems='left' px={5}>
+				<Heading fontWeight='200'>{`Hello! I'm Andy.`}</Heading>
 
 				<Text maxW='container.md' fontSize='lg'>
 					I work as a Software Engineer at the University Of Nottingham, in the

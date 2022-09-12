@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import { Hero } from '../components/Hero';
 import { VStack, Heading } from '@chakra-ui/react';
 import { getPageData } from '../lib/posts';
 
 export default function About({ postData }) {
-	const id = 'about';
 	return (
 		<Layout>
 			<Head></Head>
@@ -21,7 +19,7 @@ export default function About({ postData }) {
 	);
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
 	const postData = await getPageData('about');
 	return {
 		props: {

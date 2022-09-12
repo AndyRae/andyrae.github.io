@@ -6,7 +6,6 @@ import {
 	SimpleGrid,
 	Heading,
 	Text,
-	Box,
 	Button,
 	Fade,
 } from '@chakra-ui/react';
