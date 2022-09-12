@@ -1,5 +1,6 @@
 {
 	"env": {
+		"node": true,
 		"browser": true,
 		"es2021": true
 	},
@@ -13,8 +14,7 @@
 	},
 	"plugins": ["react"],
 	"rules": {
-		"indent": ["warn", 2],
-		"quotes": ["warn", "double"],
-		"semi": ["warn", "always"]
+		"react/react-in-jsx-scope": "off", // Next.js handles this
+		"react/prop-types": "off"
 	}
 }
