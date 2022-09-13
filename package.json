@@ -8,7 +8,7 @@
 		"start": "next start",
 		"lint": "next lint",
 		"prepare": "husky install",
-		"postbuild": "cp -a out/. ../build && touch ../build/.nojekyll"
+		"postbuild": "cp -a out/. ./build && touch ./build/.nojekyll"
 	},
 	"dependencies": {
 		"@chakra-ui/icons": "^2.0.9",
