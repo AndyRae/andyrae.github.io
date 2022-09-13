@@ -48,6 +48,7 @@ jobs:
           CI: true
 
       - name: Deploy 🚀
+        uses: actions/checkout@v2
       - run: ls -la
 
       - name: Deploy 🚀
