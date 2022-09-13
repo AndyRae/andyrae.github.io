@@ -37,6 +37,7 @@ export const Item = ({ title, link, image, date }) => {
 					objectFit='cover'
 					style={{ zIndex: -1 }}
 					quality={100}
+					unoptimized={true}
 				/>
 			)}
 
