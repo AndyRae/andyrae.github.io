@@ -50,6 +50,7 @@ jobs:
       - name: Deploy 🚀
         uses: actions/checkout@v2
       - run: ls -la
+      - run: ls out
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
