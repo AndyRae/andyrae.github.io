@@ -1,7 +1,7 @@
-Personal site.
+# Personal site
 
-Served via Jekyll and Github Pages.
+Built with Next.js
 
-To run locally `bundle exec jekyll serve`.
+Develop: `npm run dev`
 
 [rae.li](https://rae.li)
