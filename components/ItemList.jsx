@@ -39,6 +39,18 @@ export const Item = ({ title, link, image, date }) => {
 					quality={100}
 					unoptimized={true}
 				/>
+				// <picture style={{ objectFit: 'cover', layout:'fill', zIndex: -1 }}>
+				//   <source
+				//     srcSet={require('../public/fhm-1.png?url').default}
+				//     type="image/webp"
+				//   />
+				//   <source
+				//     srcSet={require('../public/fhm-1.png')}
+				//     type="image/png"
+				//   />
+				//   <img src={'fhm-1.png'}  />
+				//   <img src={image} />
+				// </picture>
 			)}
 
 			<Heading size='md' textColor='white' fontWeight={'600'} my='2'>

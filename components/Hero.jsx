@@ -20,6 +20,7 @@ export const Hero = () => {
 					<NavLink
 						link='https://www.nottingham.ac.uk/dts/researcher/digital-research-service/digital-research-service.aspx'
 						isExternal
+						px={2}
 					>
 						Digital Research Service.
 					</NavLink>
@@ -35,6 +36,7 @@ export const Hero = () => {
 						leftIcon={<FaTwitter />}
 						colorScheme='green.100'
 						variant='link'
+						size={['xs', 'sm']}
 						_hover={{
 							textDecoration: 'none',
 						}}
@@ -51,6 +53,10 @@ export const Hero = () => {
 						leftIcon={<FaLinkedin />}
 						colorScheme='green.100'
 						variant='link'
+						size={['xs', 'sm']}
+						_hover={{
+							textDecoration: 'none',
+						}}
 					>
 						LinkedIn
 					</Button>
@@ -60,12 +66,26 @@ export const Hero = () => {
 						leftIcon={<FaGithub />}
 						colorScheme='green.100'
 						variant='link'
+						size={['xs', 'sm']}
+						_hover={{
+							textDecoration: 'none',
+						}}
 					>
 						GitHub
 					</Button>
 				</NavLink>
 				<NavLink text='Email' link='mailto:hello@rae.li' isExternal>
-					<Button leftIcon={<FiMail />} colorScheme='green.100' variant='link'>
+					<Button
+						leftIcon={<FiMail />}
+						colorScheme='green.100'
+						variant='link'
+						size={['xs', 'sm']}
+						_hover={{
+							textDecoration: 'none',
+						}}
+						// px={0}
+						// paddingX={0}
+					>
 						Email
 					</Button>
 				</NavLink>
