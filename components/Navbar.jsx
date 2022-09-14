@@ -5,7 +5,8 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 export const NavLink = ({ link, children, ...rest }) => (
 	<NextLink href={link} passHref>
 		<Link
-			px={2}
+			// px={[0,2]}
+			// px={2}
 			py={1}
 			_hover={{
 				textDecoration: 'none',
@@ -47,7 +48,7 @@ export const Navbar = () => {
 					<Flex alignItems={'center'}>
 						<Stack direction={'row'} spacing={6}>
 							{Links.map((link) => (
-								<NavLink key={link.text} link={link.href}>
+								<NavLink key={link.text} link={link.href} px={2}>
 									{link.text}
 								</NavLink>
 							))}
