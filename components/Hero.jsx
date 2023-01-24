@@ -1,6 +1,6 @@
 import { NavLink } from './Navbar';
-import { Heading, VStack, HStack, Text, Button } from '@chakra-ui/react';
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Heading, VStack, HStack, Text, Box } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
 export const Hero = () => {
@@ -25,69 +25,49 @@ export const Hero = () => {
 						Digital Research Service.
 					</NavLink>
 					<br />
-					<br />I previously spent a decade working in the UK film industry,
-					before moving into technology in 2022.
+					<br />
+					Whilst programming freelance, I previously spent a decade working in
+					the UK film industry, before moving entirely into software development
+					in 2022.
 				</Text>
 			</VStack>
-
 			<HStack spacing={[0, 6]} justifyContent='center'>
-				<NavLink text='Twitter' link='https://twitter.com/AndyRae_' isExternal>
-					<Button
-						leftIcon={<FaTwitter />}
-						colorScheme='green.100'
-						variant='link'
-						size={['xs', 'sm']}
-						_hover={{
-							textDecoration: 'none',
-						}}
-					>
-						Twitter
-					</Button>
-				</NavLink>
 				<NavLink
 					text='LinkedIn'
 					link='https://www.linkedin.com/in/andyrae1/'
 					isExternal
+					display='flex'
+					alignItems='center'
 				>
-					<Button
-						leftIcon={<FaLinkedin />}
-						colorScheme='green.100'
-						variant='link'
-						size={['xs', 'sm']}
-						_hover={{
-							textDecoration: 'none',
-						}}
-					>
-						LinkedIn
-					</Button>
+					<Box pr={2}>
+						<FaLinkedin />
+					</Box>
+					LinkedIn
 				</NavLink>
-				<NavLink text='GitHub' link='https://github.com/AndyRae' isExternal>
-					<Button
-						leftIcon={<FaGithub />}
-						colorScheme='green.100'
-						variant='link'
-						size={['xs', 'sm']}
-						_hover={{
-							textDecoration: 'none',
-						}}
-					>
-						GitHub
-					</Button>
+
+				<NavLink
+					text='Github'
+					link='https://github.com/AndyRae'
+					isExternal
+					display='flex'
+					alignItems='center'
+				>
+					<Box pr={2}>
+						<FaGithub />
+					</Box>
+					Github
 				</NavLink>
-				<NavLink text='Email' link='mailto:hello@rae.li' isExternal>
-					<Button
-						leftIcon={<FiMail />}
-						colorScheme='green.100'
-						variant='link'
-						size={['xs', 'sm']}
-						_hover={{
-							textDecoration: 'none',
-						}}
-						// px={0}
-						// paddingX={0}
-					>
-						Email
-					</Button>
+				<NavLink
+					text='Email'
+					link='mailto:hello@rae.li'
+					isExternal
+					display='flex'
+					alignItems='center'
+				>
+					<Box pr={2}>
+						<FiMail />
+					</Box>
+					Email
 				</NavLink>
 			</HStack>
 		</VStack>

@@ -3,23 +3,20 @@ import { Box, Flex, Link, Button, Stack, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export const NavLink = ({ link, children, ...rest }) => (
-	<NextLink href={link} passHref>
-		<Link
-			// px={[0,2]}
-			// px={2}
-			py={1}
-			_hover={{
-				textDecoration: 'none',
-				color: 'green.200',
-			}}
-			href={link}
-			borderBottomColor='green.200'
-			borderBottomWidth='2px'
-			{...rest}
-		>
-			{children}
-		</Link>
-	</NextLink>
+	<Link
+		as={NextLink}
+		href={link}
+		py={1}
+		_hover={{
+			bgGradient: 'linear(to-l, #FF0080, #ABE4B8)',
+			bgClip: 'text',
+		}}
+		borderBottomColor='green.200'
+		borderBottomWidth='2px'
+		{...rest}
+	>
+		{children}
+	</Link>
 );
 
 const Links = [

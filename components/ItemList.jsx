@@ -3,14 +3,13 @@ import NextLink from 'next/link';
 import {
 	LinkBox,
 	LinkOverlay,
-	SimpleGrid,
 	Heading,
 	Text,
-	Button,
-	Fade,
+	VStack,
+	StackDivider,
 } from '@chakra-ui/react';
+
 import { Date } from './Date';
-import { useDisclosure } from '@chakra-ui/react';
 
 export const Item = ({ title, link, image, date }) => {
 	return (
@@ -39,18 +38,6 @@ export const Item = ({ title, link, image, date }) => {
 					quality={100}
 					unoptimized={true}
 				/>
-				// <picture style={{ objectFit: 'cover', layout:'fill', zIndex: -1 }}>
-				//   <source
-				//     srcSet={require('../public/fhm-1.png?url').default}
-				//     type="image/webp"
-				//   />
-				//   <source
-				//     srcSet={require('../public/fhm-1.png')}
-				//     type="image/png"
-				//   />
-				//   <img src={'fhm-1.png'}  />
-				//   <img src={image} />
-				// </picture>
 			)}
 
 			<Heading size='md' textColor='white' fontWeight={'600'} my='2'>
@@ -70,52 +57,46 @@ export const Item = ({ title, link, image, date }) => {
 	);
 };
 
-export const ItemList = ({ posts }) => {
-	const { isOpen, onToggle } = useDisclosure();
-
+const ListItem = ({ title, link, date }) => {
 	return (
 		<>
-			<SimpleGrid columns={[1, 2, 3]} spacing={6} pt='10'>
-				{posts.slice(0, 6).map((item, i) => (
-					<Item
+			<Heading
+				size='md'
+				fontWeight={'600'}
+				my='2'
+				_hover={{
+					bgGradient: 'linear(to-l, #FF0080, #ABE4B8)',
+					bgClip: 'text',
+				}}
+			>
+				<NextLink href={`posts/${link}`} passHref>
+					{title}
+				</NextLink>
+			</Heading>
+			<Text mt={5} textColor='gray' fontSize='sm'>
+				<Date dateString={date} />
+			</Text>
+		</>
+	);
+};
+
+export const ItemList = ({ posts }) => {
+	return (
+		<>
+			<VStack
+				divider={<StackDivider borderColor='gray.200' />}
+				spacing={8}
+				align='stretch'
+			>
+				{posts.map((item, i) => (
+					<ListItem
 						key={i}
 						title={item.title}
 						link={item.id}
-						image={item.image}
 						date={item.date}
 					/>
 				))}
-			</SimpleGrid>
-
-			<Button
-				px={2}
-				py={1}
-				_hover={{
-					textDecoration: 'none',
-					color: 'green.200',
-				}}
-				borderBottomColor='green.200'
-				borderBottomWidth='2px'
-				variant='link'
-				borderRadius='0'
-				onClick={onToggle}
-			>
-				More
-			</Button>
-
-			<Fade in={isOpen}>
-				<SimpleGrid columns={[1, 3]} spacing={8} pt='10'>
-					{posts.slice(6).map((item, i) => (
-						<Item
-							key={i}
-							title={item.title}
-							link={item.id}
-							image={item.image}
-							date={item.date}
-						/>
-					))}
-				</SimpleGrid>
-			</Fade>
+			</VStack>
 		</>
 	);
 };
