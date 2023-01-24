@@ -50,7 +50,11 @@ export const Navbar = () => {
 								</NavLink>
 							))}
 
-							<Button onClick={toggleColorMode} variant='ghost'>
+							<Button
+								onClick={toggleColorMode}
+								variant='ghost'
+								aria-label='Toggle Color Mode'
+							>
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
 						</Stack>

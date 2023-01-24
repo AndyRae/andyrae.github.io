@@ -27,11 +27,11 @@ export const Hero = () => {
 					<br />
 					<br />
 					Whilst programming freelance, I previously spent a decade working in
-					the UK film industry, before moving entirely into software development
-					in 2022.
+					the UK film industry, before moving full time into software
+					development in 2022.
 				</Text>
 			</VStack>
-			<HStack spacing={[0, 6]} justifyContent='center'>
+			<HStack spacing={[2, 6]} justifyContent='center' align={'stretch'}>
 				<NavLink
 					text='LinkedIn'
 					link='https://www.linkedin.com/in/andyrae1/'
