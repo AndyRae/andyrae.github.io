@@ -1,8 +1,15 @@
+import { ReactNode } from 'react';
 import NextLink from 'next/link';
 import { Box, Flex, Link, Button, Stack, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-export const NavLink = ({ link, children, ...rest }) => (
+type Props = {
+	children?: ReactNode;
+	link?: string;
+	[x: string]: any;
+};
+
+export const NavLink = ({ link, children, ...rest }: Props) => (
 	<Link
 		as={NextLink}
 		href={link}

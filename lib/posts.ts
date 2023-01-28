@@ -4,14 +4,19 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
+import { PostData } from '../interfaces/postData';
+
 const postsDirectory = path.join(process.cwd(), 'public/posts');
 const pagesDirectory = path.join(process.cwd(), 'public/pages');
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): PostData[] {
 	// Get file names under /posts
 	const fileNames = fs.readdirSync(postsDirectory);
 
-	const allPostsData = fileNames.reduce(function (result, fileName) {
+	const allPostsData = fileNames.reduce(function (
+		result: PostData[],
+		fileName
+	) {
 		// Filter out not markdown files
 		if (fileName.split('.').pop() !== 'md') {
 			return result;
@@ -26,17 +31,18 @@ export function getSortedPostsData() {
 		// Use gray-matter to parse the post metadata section
 		const matterResult = matter(fileContents);
 
-		const post = {
-			id,
+		const post: PostData = {
+			id: id,
 			...matterResult.data,
 		};
 
 		result.push(post);
 		return result;
-	}, []);
+	},
+	[]);
 
 	// Sort posts by date
-	return allPostsData.sort((a, b) => {
+	return allPostsData.sort((a: any, b: any) => {
 		if (a.date < b.date) {
 			return 1;
 		} else {
@@ -45,9 +51,11 @@ export function getSortedPostsData() {
 	});
 }
 
-export function getAllPostIds() {
+export function getAllPostIds(): { params: { id: string } }[] {
+	// Get file names under /posts
 	const fileNames = fs.readdirSync(postsDirectory);
 	return fileNames.map((fileName) => {
+		// Remove ".md" from file name to get id
 		return {
 			params: {
 				id: fileName.replace(/\.md$/, ''),
@@ -56,7 +64,7 @@ export function getAllPostIds() {
 	});
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string): Promise<PostData> {
 	const fullPath = path.join(postsDirectory, `${id}.md`);
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -76,7 +84,8 @@ export async function getPostData(id) {
 		...matterResult.data,
 	};
 }
-export async function getPageData(id) {
+
+export async function getPageData(id: string): Promise<PostData> {
 	const fullPath = path.join(pagesDirectory, `${id}.md`);
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 

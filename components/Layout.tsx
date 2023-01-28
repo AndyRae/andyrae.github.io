@@ -1,8 +1,9 @@
+import { ReactNode } from 'react';
 import Head from 'next/head';
-import { Navbar } from './Navbar';
 import { Container, VStack } from '@chakra-ui/react';
+import { Navbar } from './Navbar';
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<Container maxW={'container.lg'}>
 			<Head>

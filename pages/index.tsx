@@ -1,15 +1,14 @@
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import { Hero } from '../components/Hero';
 import { ItemList } from '../components/ItemList';
 import { VStack } from '@chakra-ui/react';
 import { getSortedPostsData } from '../lib/posts';
 
-export default function Home({ allPostsData }) {
+import { PostData } from '../interfaces/postData';
+
+export default function Home({ allPostsData }: { allPostsData: PostData[] }) {
 	return (
 		<Layout>
-			<Head></Head>
-
 			<VStack spacing={8} mt={8}>
 				<div className='line' />
 				<Hero />
@@ -20,7 +19,9 @@ export default function Home({ allPostsData }) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(): Promise<{
+	props: { allPostsData: PostData[] };
+}> {
 	const allPostsData = getSortedPostsData();
 	return {
 		props: {
