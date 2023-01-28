@@ -9,7 +9,6 @@ import {
 	StackDivider,
 } from '@chakra-ui/react';
 import { Date } from './Date';
-import { Post } from '../interfaces/post';
 import { PostData } from '../interfaces/postData';
 
 type ItemProps = {
@@ -17,10 +16,6 @@ type ItemProps = {
 	link: string;
 	image?: string;
 	date?: string;
-};
-
-type ListProps = {
-	posts: Post[];
 };
 
 /**

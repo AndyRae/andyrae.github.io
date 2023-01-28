@@ -3,7 +3,7 @@ import { extendTheme } from '@chakra-ui/react';
 import '@fontsource/inter/400.css';
 import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider theme={theme}>
 			<Component {...pageProps} />

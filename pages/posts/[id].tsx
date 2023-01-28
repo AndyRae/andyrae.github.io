@@ -17,10 +17,12 @@ export default function Post({ postData }: { postData: PostData }) {
 			<VStack maxW={'container.md'} alignItems='left' spacing={8} pt={'100px'}>
 				<Heading>{postData.title}</Heading>
 				{postData.date && <Date dateString={postData.date} />}
-				<div
-					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-					className='markdown'
-				/>
+				{postData.contentHtml && (
+					<div
+						dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+						className='markdown'
+					/>
+				)}
 			</VStack>
 		</Layout>
 	);

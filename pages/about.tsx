@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import { VStack, Heading } from '@chakra-ui/react';
 import { getPageData } from '../lib/posts';

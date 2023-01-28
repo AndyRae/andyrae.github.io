@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import { Hero } from '../components/Hero';
 import { ItemList } from '../components/ItemList';
