@@ -8,22 +8,15 @@ import {
 	VStack,
 	StackDivider,
 } from '@chakra-ui/react';
-
 import { Date } from './Date';
+import { Post } from '../interfaces/post';
+import { PostData } from '../interfaces/postData';
 
 type ItemProps = {
-	title: string;
+	title?: string;
 	link: string;
 	image?: string;
-	date: string;
-};
-
-type Post = {
-	id: string;
-	title: string;
-	link: string;
-	image?: string;
-	date: string;
+	date?: string;
 };
 
 type ListProps = {
@@ -63,7 +56,7 @@ export const Item = ({ title, link, image, date }: ItemProps) => {
 					style={{ zIndex: -1 }}
 					quality={100}
 					unoptimized={true}
-					alt={title}
+					alt={title || 'Image'}
 				/>
 			)}
 
@@ -78,7 +71,7 @@ export const Item = ({ title, link, image, date }: ItemProps) => {
 			</Heading>
 
 			<Text mt={5} textColor='white'>
-				<Date dateString={date} />
+				{date && <Date dateString={date} />}
 			</Text>
 		</LinkBox>
 	);
@@ -107,7 +100,7 @@ const ListItem = ({ title, link, date }: ItemProps) => {
 				</NextLink>
 			</Heading>
 			<Text mt={5} textColor='gray' fontSize='sm'>
-				<Date dateString={date} />
+				{date && <Date dateString={date} />}
 			</Text>
 		</>
 	);
@@ -117,7 +110,7 @@ const ListItem = ({ title, link, date }: ItemProps) => {
  * List of items for the home page
  * @param posts
  */
-export const ItemList = ({ posts }: ListProps) => {
+export const ItemList = ({ posts }: { posts: PostData[] }) => {
 	return (
 		<>
 			<VStack
@@ -125,11 +118,11 @@ export const ItemList = ({ posts }: ListProps) => {
 				spacing={8}
 				align='stretch'
 			>
-				{posts.map((item, i) => (
+				{posts.map((item: PostData, i: number) => (
 					<ListItem
 						key={i}
-						title={item.title}
 						link={item.id}
+						title={item.title}
 						date={item.date}
 					/>
 				))}

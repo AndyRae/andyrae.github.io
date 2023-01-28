@@ -5,6 +5,7 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
+	extends: ['@next/eslint-config-next'],
 };
 
 module.exports = nextConfig;

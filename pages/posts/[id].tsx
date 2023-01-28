@@ -4,7 +4,10 @@ import Layout from '../../components/Layout';
 import { Date } from '../../components/Date';
 import { VStack, Heading } from '@chakra-ui/react';
 
-export default function Post({ postData }) {
+import { PostData } from '../../interfaces/postData';
+import { GetStaticPathsResult } from 'next/types';
+
+export default function Post({ postData }: { postData: PostData }) {
 	return (
 		<Layout>
 			<Head>
@@ -13,18 +16,18 @@ export default function Post({ postData }) {
 
 			<VStack maxW={'container.md'} alignItems='left' spacing={8} pt={'100px'}>
 				<Heading>{postData.title}</Heading>
-				<Date dateString={postData.date} />
+				{postData.date && <Date dateString={postData.date} />}
 				<div
 					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
 					className='markdown'
-					spacing={8}
 				/>
 			</VStack>
 		</Layout>
 	);
 }
 
-export async function getStaticPaths() {
+// This function gets called at build time - it's used to generate the paths
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 	const paths = getAllPostIds();
 	return {
 		paths,
@@ -32,7 +35,12 @@ export async function getStaticPaths() {
 	};
 }
 
-export async function getStaticProps({ params }) {
+// This also gets called at build time - it's used to generate the page
+export async function getStaticProps({
+	params,
+}: {
+	params: any;
+}): Promise<{ props: { postData: PostData } }> {
 	const postData = await getPostData(params.id);
 	return {
 		props: {
