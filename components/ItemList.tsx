@@ -11,7 +11,33 @@ import {
 
 import { Date } from './Date';
 
-export const Item = ({ title, link, image, date }) => {
+type ItemProps = {
+	title: string;
+	link: string;
+	image?: string;
+	date: string;
+};
+
+type Post = {
+	id: string;
+	title: string;
+	link: string;
+	image?: string;
+	date: string;
+};
+
+type ListProps = {
+	posts: Post[];
+};
+
+/**
+ * Item component with image (unused for now)
+ * @param title
+ * @param link
+ * @param image
+ * @param date
+ */
+export const Item = ({ title, link, image, date }: ItemProps) => {
 	return (
 		<LinkBox
 			background={
@@ -37,6 +63,7 @@ export const Item = ({ title, link, image, date }) => {
 					style={{ zIndex: -1 }}
 					quality={100}
 					unoptimized={true}
+					alt={title}
 				/>
 			)}
 
@@ -57,7 +84,13 @@ export const Item = ({ title, link, image, date }) => {
 	);
 };
 
-const ListItem = ({ title, link, date }) => {
+/**
+ * Item component without image
+ * @param title
+ * @param link
+ * @param date
+ **/
+const ListItem = ({ title, link, date }: ItemProps) => {
 	return (
 		<>
 			<Heading
@@ -80,7 +113,11 @@ const ListItem = ({ title, link, date }) => {
 	);
 };
 
-export const ItemList = ({ posts }) => {
+/**
+ * List of items for the home page
+ * @param posts
+ */
+export const ItemList = ({ posts }: ListProps) => {
 	return (
 		<>
 			<VStack
