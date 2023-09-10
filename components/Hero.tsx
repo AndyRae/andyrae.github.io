@@ -26,6 +26,10 @@ export const Hero = () => {
 					</NavLink>
 					<br />
 					<br />
+					I work with C# (.NET Core), Python (Flask & Django), and Typescript
+					(Next.js & React).
+					<br />
+					<br />
 					Whilst programming freelance, I previously spent a decade working in
 					the UK film industry, before moving full time into software
 					development in 2022.

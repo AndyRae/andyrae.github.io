@@ -9,7 +9,7 @@ import {
 	StackDivider,
 } from '@chakra-ui/react';
 import { Date } from './Date';
-import { PostData } from '../interfaces/postData';
+import { PostData } from 'interfaces/postData';
 
 type ItemProps = {
 	title?: string;

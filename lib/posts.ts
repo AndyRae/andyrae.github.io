@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-import { PostData } from '../interfaces/postData';
+import { PostData } from 'interfaces/postData';
 
 const postsDirectory = path.join(process.cwd(), 'public/posts');
 const pagesDirectory = path.join(process.cwd(), 'public/pages');
