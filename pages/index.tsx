@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
-import { Hero } from '../components/Hero';
-import { ItemList } from '../components/ItemList';
+import Layout from 'components/Layout';
+import { Hero } from 'components/Hero';
+import { ItemList } from 'components/ItemList';
 import { VStack } from '@chakra-ui/react';
-import { getSortedPostsData } from '../lib/posts';
+import { getSortedPostsData } from 'lib/posts';
 
-import { PostData } from '../interfaces/postData';
+import { PostData } from 'interfaces/postData';
 
 export default function Home({ allPostsData }: { allPostsData: PostData[] }) {
 	return (

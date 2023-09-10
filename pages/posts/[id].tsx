@@ -1,10 +1,10 @@
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from 'lib/posts';
 import Head from 'next/head';
-import Layout from '../../components/Layout';
-import { Date } from '../../components/Date';
+import Layout from 'components/Layout';
+import { Date } from 'components/Date';
 import { VStack, Heading } from '@chakra-ui/react';
 
-import { PostData } from '../../interfaces/postData';
+import { PostData } from 'interfaces/postData';
 import { GetStaticPathsResult } from 'next/types';
 
 export default function Post({ postData }: { postData: PostData }) {

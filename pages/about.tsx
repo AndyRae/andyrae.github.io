@@ -1,8 +1,8 @@
-import Layout from '../components/Layout';
+import Layout from 'components/Layout';
 import { VStack, Heading } from '@chakra-ui/react';
-import { getPageData } from '../lib/posts';
+import { getPageData } from 'lib/posts';
 
-import { PostData } from '../interfaces/postData';
+import { PostData } from 'interfaces/postData';
 
 export default function About({ postData }: PostData) {
 	return (
