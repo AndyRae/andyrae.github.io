@@ -18,8 +18,6 @@ export const metadata: Metadata = {
 		icon: '/icons/favicon.ico',
 		apple: '/icons/apple-touch-icon.png',
 	},
-	themeColor: 'black',
-	manifest: '/manifest.json',
 };
 
 export default function RootLayout({
