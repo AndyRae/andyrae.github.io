@@ -3,8 +3,23 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://rae.li'),
 	title: 'Andy Rae | Software Engineer',
 	description: 'Andy Rae | Software Engineer',
+	openGraph: {
+		title: 'Andy Rae | Software Engineer',
+		description: 'Andy Rae | Software Engineer',
+		url: 'https://rae.li',
+		siteName: 'Andy Rae | Software Engineer',
+		locale: 'en-GB',
+		type: 'website',
+	},
+	icons: {
+		icon: '/icons/favicon.ico',
+		apple: '/icons/apple-touch-icon.png',
+	},
+	themeColor: 'black',
+	manifest: '/manifest.json',
 };
 
 export default function RootLayout({
