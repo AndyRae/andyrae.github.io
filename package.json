@@ -6,7 +6,7 @@
 		"prepare": "husky install",
 		"postbuild": "cp -a out/. ./build && touch ./build/.nojekyll",
 		"dev": "next dev --turbo",
-		"build": "next build && next export",
+		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
