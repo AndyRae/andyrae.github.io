@@ -21,9 +21,9 @@ export const Hero = () => {
 					within the School of Medicine.
 					<br />
 					<br />
-					I’m also the Head of Research Software at Nottingham University
+					{`I’m also the Head of Research Software at Nottingham University
 					Hospitals, where I focus on delivering cutting-edge software solutions
-					for research, currently for the
+					for research, currently for the`}
 					<NavLink
 						href='https://www.emsde.net'
 						target='_blank'
