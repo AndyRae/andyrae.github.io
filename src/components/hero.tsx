@@ -9,8 +9,8 @@ export const Hero = () => {
 				<h1 className='text-4xl font-light'>{`Hello! I'm Andy.`}</h1>
 
 				<p className='text-lg'>
-					I'm a Senior Software Engineer at the University Of Nottingham,
-					specialising in
+					{`I'm a Senior Software Engineer at the University Of Nottingham,
+					specialising in`}
 					<NavLink
 						href='https://nottinghambrc.nihr.ac.uk/research/informatics'
 						target='_blank'
