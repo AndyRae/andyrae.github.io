@@ -9,23 +9,36 @@ export const Hero = () => {
 				<h1 className='text-4xl font-light'>{`Hello! I'm Andy.`}</h1>
 
 				<p className='text-lg'>
-					I am a Software Engineer at the University Of Nottingham, in the
+					I'm a Senior Software Engineer at the University Of Nottingham,
+					specialising in
 					<NavLink
-						href='https://www.nottingham.ac.uk/dts/researcher/digital-research-service/digital-research-service.aspx'
+						href='https://nottinghambrc.nihr.ac.uk/research/informatics'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						Digital Research Service.
+						Health Informatics
+					</NavLink>
+					within the School of Medicine.
+					<br />
+					<br />
+					I’m also the Head of Research Software at Nottingham University
+					Hospitals, where I focus on delivering cutting-edge software solutions
+					for research, currently for the
+					<NavLink
+						href='https://www.emsde.net'
+						target='_blank'
+						rel='noopener noreferer'
+					>
+						East Midlands Secure Data Environment.
 					</NavLink>
 					<br />
 					<br />
-					I work with C# (.NET Core), Python (FastApi / Flask / Django), and
-					Typescript (Next.js & React).
+					I lead development of complex software, drawing on extensive
+					experience with C#, Python, and Typescript.
 					<br />
 					<br />
-					Whilst working as a freelance web developer, I previously spent a
-					decade working in the UK film industry, before moving full time into
-					software engineering in 2022.
+					Before moving into full-time software engineering, I previously spent
+					a decade in the UK film industry.
 				</p>
 			</div>
 			<div className='flex space-x-2 md:space-x-6 justify-center'>
